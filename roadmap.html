@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>就労継続支援B型 ロードマップ一覧</title>
+<style>
+:root {
+  --text: #222;
+  --muted: #666;
+  --border: #ddd;
+  --link: #1a56cc;
+}
+* { box-sizing: border-box; }
+body {
+  font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",
+               "Meiryo", sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0 0 60px 0;
+  background: #fafafa;
+  line-height: 1.6;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding: 28px 24px; }
+h1 { font-size: 1.7rem; margin: 0 0 8px; }
+h2.cat-title { font-size: 1.15rem; margin: 0; padding: 10px 16px; color: #fff; border-radius: 6px 6px 0 0; }
+p.lead { color: var(--muted); font-size: 0.92rem; margin-top: 0; }
+hr { border: none; border-top: 1px solid #ccc; margin: 22px 0; }
+
+/* 目次（色分け付き） */
+.legend-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-top: 8px; }
+.legend-table td { padding: 5px 8px; vertical-align: middle; }
+.legend-table tr:hover td { background: #f2f6ff; }
+.swatch { width: 22px; height: 14px; border-radius: 2px; display: inline-block; }
+.legend-table td.label { font-weight: bold; white-space: nowrap; width: 9em; }
+.legend-table td.label a { color: var(--link); text-decoration: none; }
+.legend-table td.label a:hover { text-decoration: underline; }
+
+/* 使い方 */
+.howto { font-size: 0.92rem; }
+.howto ul { margin: 6px 0 0 0; padding-left: 1.3em; }
+.howto li { margin-bottom: 4px; }
+
+/* カテゴリセクション */
+section.category { margin: 34px 0 0; }
+section.category .desc {
+  background: #fff; border: 1px solid var(--border); border-top: none;
+  padding: 10px 16px; font-size: 0.9rem; color: var(--muted); margin: 0;
+}
+section.category .note {
+  background: #f7f7f7; border: 1px solid var(--border); border-top: none;
+  padding: 10px 16px; font-size: 0.84rem; color: var(--muted); margin: 0;
+}
+
+/* テーブル */
+table.doc-table {
+  width: 100%; border-collapse: collapse; background: #fff;
+  font-size: 0.88rem; border: 1px solid var(--border);
+}
+table.doc-table th, table.doc-table td {
+  border: 1px solid var(--border); padding: 8px 10px; vertical-align: top;
+}
+table.doc-table thead th {
+  font-weight: bold; text-align: center;
+}
+table.doc-table .no { width: 4.5em; text-align: center; font-weight: bold; white-space: nowrap; }
+table.doc-table .progress { width: 4em; text-align: center; }
+table.doc-table .progress input { width: 18px; height: 18px; cursor: pointer; }
+table.doc-table .linkcell { width: 21%; }
+table.doc-table .name { width: auto; }
+table.doc-table .title { font-weight: bold; }
+table.doc-table .row-note { color: var(--muted); font-size: 0.82rem; margin-top: 3px; }
+table.doc-table tbody tr:nth-child(even) td { background: #f7f7f7; }
+table.doc-table tr.group-row td {
+  background: #e6e6e6; font-weight: bold; text-align: left; font-size: 0.92rem;
+}
+table.doc-table a.link { color: var(--link); text-decoration: underline; font-size: 0.92rem; }
+table.doc-table a.link-real { font-weight: bold; }
+table.doc-table a.link-real.ft-word  { color: #1e40af; }
+table.doc-table a.link-real.ft-excel { color: #166534; }
+table.doc-table a.link-real.ft-pdf   { color: #991b1b; }
+table.doc-table a.link-real.ft-other { color: #9a3412; }
+table.doc-table .url { color: #999; font-size: 0.74rem; word-break: break-all; margin-top: 2px; }
+table.doc-table td.linkcell.multi { width: 42%; }
+table.doc-table .multi-list { margin: 0; padding-left: 1.2em; }
+table.doc-table .multi-list li { margin-bottom: 4px; }
+table.doc-table .multi-list a { word-break: break-all; }
+
+/* トップへ戻る */
+.back-to-top { text-align: right; font-size: 0.85rem; margin-top: 6px; }
+.back-to-top a { color: var(--link); text-decoration: none; }
+
+@media print {
+  body { background: #fff; }
+  .wrap { max-width: none; padding: 0; }
+  section.category { page-break-before: always; margin-top: 0; }
+  table.doc-table thead { display: table-header-group; }
+  table.doc-table tr { page-break-inside: avoid; }
+  .back-to-top { display: none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+<h1>就労継続支援B型　ロードマップ一覧</h1>
+<p class="lead">「ロードマップ（お問い合わせ〜契約終了）」をもとに、書類を作成・見直しするタイミング（毎日／週間／1ヶ月／都度／3ヶ月／6ヶ月／1年／見直し）ごとに整理した一覧です。各書類の進捗管理、テンプレート・マニュアルへのリンクの確認に活用してください。</p>
+
+<hr>
+<h2 style="font-size:1.05rem;">【目次】</h2>
+<table class="legend-table">
+
+<tr><td><span class="swatch" style="background:#E2574C"></span></td><td class="label"><a href="#daily">● 毎日</a></td><td>利用者様ごと・職員ごとに、サービス提供の都度（毎日）作成・記入するもの。</td></tr>
+<tr><td><span class="swatch" style="background:#3FA66A"></span></td><td class="label"><a href="#weekly">● 週間</a></td><td>1週間に1回のペースで記入・確認するもの（主に在宅支援関連）。</td></tr>
+<tr><td><span class="swatch" style="background:#3E7CC2"></span></td><td class="label"><a href="#monthly">● 1ヶ月</a></td><td>月初・月末など、月に1回作成する書類（請求・勤務予定・献立など）。</td></tr>
+<tr><td><span class="swatch" style="background:#E8902B"></span></td><td class="label"><a href="#asneeded">● 都度</a></td><td>お問い合わせ・契約・利用終了・事故発生時など、その出来事が発生した都度作成するもの。</td></tr>
+<tr><td><span class="swatch" style="background:#E0B92E"></span></td><td class="label"><a href="#quarterly">● 3ヶ月</a></td><td>3ヶ月に1回のペースで実施・作成する委員会議事録等。</td></tr>
+<tr><td><span class="swatch" style="background:#8E6FC4"></span></td><td class="label"><a href="#semiannual">● 6ヶ月</a></td><td>6ヶ月に1回のペースで実施するモニタリング・個別支援計画の見直し・研修・訓練等。</td></tr>
+<tr><td><span class="swatch" style="background:#8A5A4E"></span></td><td class="label"><a href="#annual">● 1年</a></td><td>年度単位で作成・実施・報告するもの（年間計画、各種研修、決算、公表等）。</td></tr>
+<tr><td><span class="swatch" style="background:#4A4A52"></span></td><td class="label"><a href="#review">● 見直し</a></td><td>運営規程・就業規則・給与規程・人員基準等、運営上の変更があったタイミングで都度見直すもの。</td></tr>
+</table>
+<p class="lead" style="margin-top:14px;"><a href="flow_tree.html" style="color:var(--link);font-weight:bold">▶ 業務フロー・ロジックツリー</a>もあわせてご確認ください（1日の流れ・お問い合わせ〜契約終了・各頻度の書類・委託契約書を図解しています）。</p>
+
+<hr>
+<h2 style="font-size:1.05rem;">【表の見方・リンクについて】</h2>
+<div class="howto">
+<ul>
+<li>「No.」はロードマップ内の項目番号（1〜75）に対応しています。番号のない項目は「追加」「特例」「―」と表示しています。</li>
+<li>「進捗」列のチェックボックスは、作成・確認が完了したらチェックを入れてご利用ください（このページ単体での保存はされません。印刷や記録用にご利用ください）。</li>
+<li>「作成資料 / テンプレート」「手順書 / マニュアル」列のリンク色はファイル種別を表します：<b style="color:#1e40af">青＝Word/Doc</b>、<b style="color:#166534">緑＝Excel</b>、<b style="color:#991b1b">赤＝PDF</b>、<b style="color:#9a3412">橙＝その他</b>。<b style="color:#1a56cc">青字（細字）</b>は仮のプレースホルダー（https://example.com/...）です。</li>
+<li>「見直し」カテゴリは、項目数が多いため、関連書類をグループ（事業の土台、加算関連、マニュアル関係など）にまとめて掲載しています。</li>
+</ul>
+</div>
+
+<section class="category" id="daily">
+<h2 class="cat-title" style="background:#E2574C">● 毎日</h2>
+<p class="desc">利用者様ごと・職員ごとに、サービス提供の都度（毎日）作成・記入するもの。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-daily-0">
+  <td class="no">14</td>
+  <td class="name"><div class="title">日誌</div><div class="row-note">利用者の様子・支援内容を記入</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/9yjbpv0mdawdvn8rmfkr3/_20260325.xlsx?rlkey=u9bck2u0zvzynu96zqdrs0dpw&amp;st=3l2u9iwl&amp;dl=0" target="_blank" rel="noopener">作業日報_20260325.xls</a><div class="url">https://www.dropbox.com/scl/fi/9yjbpv0mdawdvn8rmfkr3/_20260325.xlsx?rlkey=u9bck2u0zvzynu96zqdrs0dpw&amp;st=3l2u9iwl&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/7tuquog28kfm9b3xuvmnk/.xlsx?rlkey=grualtlj9u8uxubzuhwb75396&amp;st=eftmi964&amp;dl=0" target="_blank" rel="noopener">21 作業日報（雛形）.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/7tuquog28kfm9b3xuvmnk/.xlsx?rlkey=grualtlj9u8uxubzuhwb75396&amp;st=eftmi964&amp;dl=0</div></td>
+</tr>
+<tr id="row-daily-1">
+  <td class="no">15</td>
+  <td class="name"><div class="title">サービス提供実績記録票</div><div class="row-note">当日中に記入し利用者からサインをもらう（月末のサイン漏れに注意）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/002.pdf" target="_blank" rel="noopener">サービス提供実績記録票.pdf</a><div class="url">https://example.com/templates/002.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/002.pdf" target="_blank" rel="noopener">サービス提供実績記録票_マニュアル.pdf</a><div class="url">https://example.com/manuals/002.pdf</div></td>
+</tr>
+<tr id="row-daily-2">
+  <td class="no">19</td>
+  <td class="name"><div class="title">看護記録</div><div class="row-note">医療連携体制加算：看護師が記入</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/003.pdf" target="_blank" rel="noopener">看護記録.pdf</a><div class="url">https://example.com/templates/003.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/003.pdf" target="_blank" rel="noopener">看護記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/003.pdf</div></td>
+</tr>
+<tr id="row-daily-3">
+  <td class="no">25</td>
+  <td class="name"><div class="title">摂取量の記録</div><div class="row-note">食事提供体制加算：日誌での記録でも可</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/004.pdf" target="_blank" rel="noopener">摂取量の記録.pdf</a><div class="url">https://example.com/templates/004.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/004.pdf" target="_blank" rel="noopener">摂取量の記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/004.pdf</div></td>
+</tr>
+<tr id="row-daily-4">
+  <td class="no">29</td>
+  <td class="name"><div class="title">送迎記録表</div><div class="row-note">送迎加算：往復の回数等を記録</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/005.pdf" target="_blank" rel="noopener">送迎記録表.pdf</a><div class="url">https://example.com/templates/005.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/005.pdf" target="_blank" rel="noopener">送迎記録表_マニュアル.pdf</a><div class="url">https://example.com/manuals/005.pdf</div></td>
+</tr>
+<tr id="row-daily-5">
+  <td class="no">32</td>
+  <td class="name"><div class="title">タイムカード又は出勤簿</div><div class="row-note">全職員・施設外就労同行職員も対象</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/rjyboeuk2o9gv9ujwl1fr/_20260325.xlsx?rlkey=3xz5reprzovpnf3w6dxweva4q&amp;st=a5wfclbf&amp;dl=0" target="_blank" rel="noopener">勤怠表_20260325.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/rjyboeuk2o9gv9ujwl1fr/_20260325.xlsx?rlkey=3xz5reprzovpnf3w6dxweva4q&amp;st=a5wfclbf&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/006.pdf" target="_blank" rel="noopener">タイムカード又は出勤簿_マニュアル.pdf</a><div class="url">https://example.com/manuals/006.pdf</div></td>
+</tr>
+<tr id="row-daily-6">
+  <td class="no">37</td>
+  <td class="name"><div class="title">サービス提供実績記録票（在宅用）</div><div class="row-note">在宅支援：サービス提供時間・連絡時間（2回）を記入</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/wuury7jzn2vjh0ly40dk0/_-_20260415.xls?rlkey=oepm3va7g0zjyc9spo4wa7yd8&amp;st=kgadszyd&amp;dl=0" target="_blank" rel="noopener">就労継続支援提供実績記録票_在宅電話時間_20260415.xls</a><div class="url">https://www.dropbox.com/scl/fi/wuury7jzn2vjh0ly40dk0/_-_20260415.xls?rlkey=oepm3va7g0zjyc9spo4wa7yd8&amp;st=kgadszyd&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/007.pdf" target="_blank" rel="noopener">サービス提供実績記録票（在宅用）_マニュアル.pdf</a><div class="url">https://example.com/manuals/007.pdf</div></td>
+</tr>
+<tr id="row-daily-7">
+  <td class="no">38</td>
+  <td class="name"><div class="title">音声データ・動画又は静止画等</div><div class="row-note">在宅支援：記録し保存しておく</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/008.pdf" target="_blank" rel="noopener">音声データ・動画又は静止画等.pdf</a><div class="url">https://example.com/templates/008.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/008.pdf" target="_blank" rel="noopener">音声データ・動画又は静止画等_マニュアル.pdf</a><div class="url">https://example.com/manuals/008.pdf</div></td>
+</tr>
+<tr id="row-daily-8">
+  <td class="no">41</td>
+  <td class="name"><div class="title">業務日誌</div><div class="row-note">職員間の朝礼・終礼で共有</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/009.pdf" target="_blank" rel="noopener">業務日誌.pdf</a><div class="url">https://example.com/templates/009.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/009.pdf" target="_blank" rel="noopener">業務日誌_マニュアル.pdf</a><div class="url">https://example.com/manuals/009.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="weekly">
+<h2 class="cat-title" style="background:#3FA66A">● 週間</h2>
+<p class="desc">1週間に1回のペースで記入・確認するもの（主に在宅支援関連）。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-weekly-0">
+  <td class="no">39</td>
+  <td class="name"><div class="title">在宅利用評価表</div><div class="row-note">在宅支援：1週間に1回記入する（1ヶ月評価にも使用）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/hqmeyv8frwo2s686y0c7s/_20260310.xlsx?rlkey=zsi0ri4585bxjhwo63452m3ta&amp;st=1kp66wmb&amp;dl=0" target="_blank" rel="noopener">在宅支援利用評価票_20260310.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/hqmeyv8frwo2s686y0c7s/_20260310.xlsx?rlkey=zsi0ri4585bxjhwo63452m3ta&amp;st=1kp66wmb&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/010.pdf" target="_blank" rel="noopener">在宅利用評価表_マニュアル.pdf</a><div class="url">https://example.com/manuals/010.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="monthly">
+<h2 class="cat-title" style="background:#3E7CC2">● 1ヶ月</h2>
+<p class="desc">月初・月末など、月に1回作成する書類（請求・勤務予定・献立など）。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-monthly-0">
+  <td class="no">23</td>
+  <td class="name"><div class="title">勤務予定（実績）一覧表</div><div class="row-note">翌月分を作成し、月初に掲示。人員配置の根拠資料</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/96czm7bnjfcbtk4r1q6rc/_20260325.xlsx?rlkey=8hyt8n1x02tky7w346m2ztn4i&amp;st=l32knhtx&amp;dl=0" target="_blank" rel="noopener">勤務予定(実績)一覧表_20260325.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/96czm7bnjfcbtk4r1q6rc/_20260325.xlsx?rlkey=8hyt8n1x02tky7w346m2ztn4i&amp;st=l32knhtx&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/nxewxwbgbha1q31ca2tle/_20260325.xlsx?rlkey=z5lyncljcz4e8ij7qctklvt18&amp;st=glkfmu8v&amp;dl=0" target="_blank" rel="noopener">就労支援シフト_20260325.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/nxewxwbgbha1q31ca2tle/_20260325.xlsx?rlkey=z5lyncljcz4e8ij7qctklvt18&amp;st=glkfmu8v&amp;dl=0</div></td>
+</tr>
+<tr id="row-monthly-1">
+  <td class="no">20</td>
+  <td class="name"><div class="title">主治医又は主治医以外の医師との連携記録</div><div class="row-note">医療連携体制加算：連携した場合に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/012.pdf" target="_blank" rel="noopener">主治医又は主治医以外の医師との連携記録.pdf</a><div class="url">https://example.com/templates/012.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/012.pdf" target="_blank" rel="noopener">主治医又は主治医以外の医師との連携記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/012.pdf</div></td>
+</tr>
+<tr id="row-monthly-2">
+  <td class="no">21</td>
+  <td class="name"><div class="title">看護状況を主治医等へ報告</div><div class="row-note">医療連携体制加算：1ヶ月に1回の頻度（看護記録を送った記録の雛形あり）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/013.pdf" target="_blank" rel="noopener">看護状況を主治医等へ報告.pdf</a><div class="url">https://example.com/templates/013.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/013.pdf" target="_blank" rel="noopener">看護状況を主治医等へ報告_マニュアル.pdf</a><div class="url">https://example.com/manuals/013.pdf</div></td>
+</tr>
+<tr id="row-monthly-3">
+  <td class="no">24</td>
+  <td class="name"><div class="title">献立表</div><div class="row-note">食事提供体制加算：翌月分を作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/014.pdf" target="_blank" rel="noopener">献立表.pdf</a><div class="url">https://example.com/templates/014.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/014.pdf" target="_blank" rel="noopener">献立表_マニュアル.pdf</a><div class="url">https://example.com/manuals/014.pdf</div></td>
+</tr>
+<tr id="row-monthly-4">
+  <td class="no">33</td>
+  <td class="name"><div class="title">施設外就労実績報告書</div><div class="row-note">施設外就労：1ヶ月に1回記入し事業所で保管</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/015.pdf" target="_blank" rel="noopener">施設外就労実績報告書.pdf</a><div class="url">https://example.com/templates/015.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/015.pdf" target="_blank" rel="noopener">施設外就労実績報告書_マニュアル.pdf</a><div class="url">https://example.com/manuals/015.pdf</div></td>
+</tr>
+<tr id="row-monthly-5">
+  <td class="no">43</td>
+  <td class="name"><div class="title">工賃明細書</div><div class="row-note">工賃計算結果・明細をコピーして保管</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/333wr510lqomoc4hm6wrs/_-_20260423.xlsx?rlkey=giorii4hv24n92gr1v5kf3kek&amp;st=44wlu8dz&amp;dl=0" target="_blank" rel="noopener">工賃明細書_領収書有_20260423.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/333wr510lqomoc4hm6wrs/_-_20260423.xlsx?rlkey=giorii4hv24n92gr1v5kf3kek&amp;st=44wlu8dz&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/o9w2odxcf44xx87eo2m8a/_-_-_-_-_20260501.xlsx?rlkey=e0u8ovacyc1bk4b8paxf98kv1&amp;st=tds0e0g9&amp;dl=0" target="_blank" rel="noopener">ひな形_工賃明細書_領収書有_管理表_収支表_20260501.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/o9w2odxcf44xx87eo2m8a/_-_-_-_-_20260501.xlsx?rlkey=e0u8ovacyc1bk4b8paxf98kv1&amp;st=tds0e0g9&amp;dl=0</div></td>
+</tr>
+<tr id="row-monthly-6">
+  <td class="no">44</td>
+  <td class="name"><div class="title">工賃収支表</div><div class="row-note">工賃支払い準備時に記録</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/bwqq7ovu3ij0b1lnd87vn/_20260326.xlsx?rlkey=vekh9qcbtk8ydb3xfxiuroxu0&amp;st=yhf19hn6&amp;dl=0" target="_blank" rel="noopener">工賃収支表_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/bwqq7ovu3ij0b1lnd87vn/_20260326.xlsx?rlkey=vekh9qcbtk8ydb3xfxiuroxu0&amp;st=yhf19hn6&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/017.pdf" target="_blank" rel="noopener">工賃収支表_マニュアル.pdf</a><div class="url">https://example.com/manuals/017.pdf</div></td>
+</tr>
+<tr id="row-monthly-7">
+  <td class="no">45</td>
+  <td class="name"><div class="title">利用者負担に係る請求書・領収書</div><div class="row-note">必要に応じて準備・交付</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/7dgyh80vfsmrtts0w2kt2/20260326.xlsx?rlkey=7n9r7ty5vt1oy40hsiu5f7x2j&amp;st=71ckp1xp&amp;dl=0" target="_blank" rel="noopener">利用者負担額の請求書・領収書20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/7dgyh80vfsmrtts0w2kt2/20260326.xlsx?rlkey=7n9r7ty5vt1oy40hsiu5f7x2j&amp;st=71ckp1xp&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/wephuredh3bbj3iguoz68/_-_-20260326.xlsx?rlkey=rdph0bt400m7mgaj4ohtwnase&amp;st=rq1ej37m&amp;dl=0" target="_blank" rel="noopener">利用者様用_請求書_領収書20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/wephuredh3bbj3iguoz68/_-_-20260326.xlsx?rlkey=rdph0bt400m7mgaj4ohtwnase&amp;st=rq1ej37m&amp;dl=0</div></td>
+</tr>
+<tr id="row-monthly-8">
+  <td class="no">46</td>
+  <td class="name"><div class="title">負担上限額管理表</div><div class="row-note">利用者負担上限管理加算を算定している場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/mcew20wowwpgdi5pww41b/_.xlsx?rlkey=3iq1bt2jjv9y3yoxyxg17c9j2&amp;st=vxclyy5g&amp;dl=0" target="_blank" rel="noopener">利用者負担額一覧表(管理される側の事業所が作成)_雛形（記入例あり）.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/mcew20wowwpgdi5pww41b/_.xlsx?rlkey=3iq1bt2jjv9y3yoxyxg17c9j2&amp;st=vxclyy5g&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/jx50hyix9ewmpx74c3joj/_.xlsx?rlkey=9lys6s3srcpwpu675a94lz2do&amp;st=enbctipw&amp;dl=0" target="_blank" rel="noopener">利用者負担上限額管理結果表(上限管理事業所が作成)_雛形（記入例あり）.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/jx50hyix9ewmpx74c3joj/_.xlsx?rlkey=9lys6s3srcpwpu675a94lz2do&amp;st=enbctipw&amp;dl=0</div></td>
+</tr>
+<tr id="row-monthly-9">
+  <td class="no">47</td>
+  <td class="name"><div class="title">介護給付費等の請求書・明細書</div><div class="row-note">国保連への請求後に印刷（2か月前分）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/020.pdf" target="_blank" rel="noopener">介護給付費等の請求書・明細書.pdf</a><div class="url">https://example.com/templates/020.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/020.pdf" target="_blank" rel="noopener">介護給付費等の請求書・明細書_マニュアル.pdf</a><div class="url">https://example.com/manuals/020.pdf</div></td>
+</tr>
+<tr id="row-monthly-10">
+  <td class="no">48</td>
+  <td class="name"><div class="title">法定代理受領通知書</div><div class="row-note">2か月前の分を発行（利用開始から2ヶ月間は発行なし）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/rde2ezepqxf5xqvjplfjo/_20260326.xlsx?rlkey=ugrvcrdnya6ct6pqq4awpzzzh&amp;st=hqgb8xeo&amp;dl=0" target="_blank" rel="noopener">法定代理受領通知書_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/rde2ezepqxf5xqvjplfjo/_20260326.xlsx?rlkey=ugrvcrdnya6ct6pqq4awpzzzh&amp;st=hqgb8xeo&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/m2vwsb27y67uyi2nag2rz/_20260326.docx?rlkey=h8om3g9m87kdniquflbpe8e8v&amp;st=p75dnqm3&amp;dl=0" target="_blank" rel="noopener">法定代理受領についてのお知らせ_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/m2vwsb27y67uyi2nag2rz/_20260326.docx?rlkey=h8om3g9m87kdniquflbpe8e8v&amp;st=p75dnqm3&amp;dl=0</div></td>
+</tr>
+<tr id="row-monthly-11">
+  <td class="no">49</td>
+  <td class="name"><div class="title">売上表</div><div class="row-note">地域協働加算を算定している場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/022.pdf" target="_blank" rel="noopener">売上表.pdf</a><div class="url">https://example.com/templates/022.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/022.pdf" target="_blank" rel="noopener">売上表_マニュアル.pdf</a><div class="url">https://example.com/manuals/022.pdf</div></td>
+</tr>
+<tr id="row-monthly-12">
+  <td class="no">追加</td>
+  <td class="name"><div class="title">給料明細書</div><div class="row-note">給与計算後、給与日に作成・配付</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/023.pdf" target="_blank" rel="noopener">給料明細書.pdf</a><div class="url">https://example.com/templates/023.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/023.pdf" target="_blank" rel="noopener">給料明細書_マニュアル.pdf</a><div class="url">https://example.com/manuals/023.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="asneeded">
+<h2 class="cat-title" style="background:#E8902B">● 都度</h2>
+<p class="desc">お問い合わせ・契約・利用終了・事故発生時など、その出来事が発生した都度作成するもの。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-asneeded-0">
+  <td class="no">1</td>
+  <td class="name"><div class="title">相談受付票</div><div class="row-note">お問い合わせ対応時に作成（利用に至らなかった場合も保管）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/lxk0y6y6983d8w9s2nshn/_20260312.xlsx?rlkey=9g32otagcx5o9e7xjuw51cshr&amp;st=2jeqryce&amp;dl=0" target="_blank" rel="noopener">相談受付票_20260312.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/lxk0y6y6983d8w9s2nshn/_20260312.xlsx?rlkey=9g32otagcx5o9e7xjuw51cshr&amp;st=2jeqryce&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/024.pdf" target="_blank" rel="noopener">相談受付票_マニュアル.pdf</a><div class="url">https://example.com/manuals/024.pdf</div></td>
+</tr>
+<tr id="row-review-g6r2">
+  <td class="no">2</td>
+  <td class="name"><div class="title">個人情報使用同意書</div><div class="row-note">見学・体験対応時に取得</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/dc8jerukb38zzbqu1teec/_20260216.docx?rlkey=2o729r2q7b23b4zyf6i4r3udq&amp;st=huqv6808&amp;dl=0" target="_blank" rel="noopener">個人情報使用同意書_20260216.docx</a><div class="url">https://www.dropbox.com/scl/fi/dc8jerukb38zzbqu1teec/_20260216.docx?rlkey=2o729r2q7b23b4zyf6i4r3udq&amp;st=huqv6808&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/025.pdf" target="_blank" rel="noopener">個人情報使用同意書_マニュアル.pdf</a><div class="url">https://example.com/manuals/025.pdf</div></td>
+</tr>
+<tr id="row-semiannual-1">
+  <td class="no">3</td>
+  <td class="name"><div class="title">アセスメント</div><div class="row-note">見学・体験時、契約時、計画作成プロセスで実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/9i7rqo71d25ddlwekx7r1/1-4_20260528.xlsx?rlkey=n1ru18ghbvf3lb09arl2rck0m&amp;st=xdv9ssl9&amp;dl=0" target="_blank" rel="noopener">アセスメント1～4_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/9i7rqo71d25ddlwekx7r1/1-4_20260528.xlsx?rlkey=n1ru18ghbvf3lb09arl2rck0m&amp;st=xdv9ssl9&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/026.pdf" target="_blank" rel="noopener">アセスメント_マニュアル.pdf</a><div class="url">https://example.com/manuals/026.pdf</div></td>
+</tr>
+<tr id="row-semiannual-2">
+  <td class="no">4</td>
+  <td class="name"><div class="title">ニーズ整理表</div><div class="row-note">アセスメントを基に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/jmcpdg9hlt9m6y3zi3645/_20260528.xlsx?rlkey=ubhzz92hngw5vwtl7rdlio3ka&amp;st=2bwyw9jv&amp;dl=0" target="_blank" rel="noopener">ニーズ整理票_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/jmcpdg9hlt9m6y3zi3645/_20260528.xlsx?rlkey=ubhzz92hngw5vwtl7rdlio3ka&amp;st=2bwyw9jv&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/027.pdf" target="_blank" rel="noopener">ニーズ整理表_マニュアル.pdf</a><div class="url">https://example.com/manuals/027.pdf</div></td>
+</tr>
+<tr id="row-semiannual-3">
+  <td class="no">5</td>
+  <td class="name"><div class="title">個別支援計画（案）</div><div class="row-note">個別支援会議前に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/w2hex720hxmll7rz7osh6/_20260216.xlsx?rlkey=5ege62cnvz03f29qqh7zqmsp8&amp;st=36g8lhwj&amp;dl=0" target="_blank" rel="noopener">個別支援計画（案）_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/w2hex720hxmll7rz7osh6/_20260216.xlsx?rlkey=5ege62cnvz03f29qqh7zqmsp8&amp;st=36g8lhwj&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/028.pdf" target="_blank" rel="noopener">個別支援計画（案）_マニュアル.pdf</a><div class="url">https://example.com/manuals/028.pdf</div></td>
+</tr>
+<tr id="row-semiannual-4">
+  <td class="no">6</td>
+  <td class="name"><div class="title">個別支援会議議事録</div><div class="row-note">個別支援計画（案）について会議を実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/e671cjlmir8z5ss7wmofz/_20260528.xlsx?rlkey=0zg2vokmry0hu3knpx5aoxl79&amp;st=dbmiyb6r&amp;dl=0" target="_blank" rel="noopener">個別支援会議（ケース会議）議事録_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/e671cjlmir8z5ss7wmofz/_20260528.xlsx?rlkey=0zg2vokmry0hu3knpx5aoxl79&amp;st=dbmiyb6r&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/029.pdf" target="_blank" rel="noopener">個別支援会議議事録_マニュアル.pdf</a><div class="url">https://example.com/manuals/029.pdf</div></td>
+</tr>
+<tr id="row-asneeded-6">
+  <td class="no">7</td>
+  <td class="name"><div class="title">受給者証</div><div class="row-note">契約時に確認・写しを保管／利用終了時も使用</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/030.pdf" target="_blank" rel="noopener">受給者証.pdf</a><div class="url">https://example.com/templates/030.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/030.pdf" target="_blank" rel="noopener">受給者証_マニュアル.pdf</a><div class="url">https://example.com/manuals/030.pdf</div></td>
+</tr>
+<tr id="row-asneeded-7">
+  <td class="no">8</td>
+  <td class="name"><div class="title">契約内容報告書</div><div class="row-note">契約時・利用終了時に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/04xu909an0sjpvc6ya8wc/_20260209.xls?rlkey=ri4fl2bypud66rxc5we02dyeb&amp;st=7zeaygdm&amp;dl=0" target="_blank" rel="noopener">契約内容報告書_20260209.xls</a><div class="url">https://www.dropbox.com/scl/fi/04xu909an0sjpvc6ya8wc/_20260209.xls?rlkey=ri4fl2bypud66rxc5we02dyeb&amp;st=7zeaygdm&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/031.pdf" target="_blank" rel="noopener">契約内容報告書_マニュアル.pdf</a><div class="url">https://example.com/manuals/031.pdf</div></td>
+</tr>
+<tr id="row-semiannual-5">
+  <td class="no">9</td>
+  <td class="name"><div class="title">個別支援計画</div><div class="row-note">契約時・モニタリング後に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/s7mwyoqy4gpquppcptlbr/_20260216.xlsx?rlkey=tw9yfhsk3610qtod4bo1989jk&amp;st=isa1f67y&amp;dl=0" target="_blank" rel="noopener">個別支援計画（正）_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/s7mwyoqy4gpquppcptlbr/_20260216.xlsx?rlkey=tw9yfhsk3610qtod4bo1989jk&amp;st=isa1f67y&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/032.pdf" target="_blank" rel="noopener">個別支援計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/032.pdf</div></td>
+</tr>
+<tr id="row-review-g7r0">
+  <td class="no">10</td>
+  <td class="name"><div class="title">契約書</div><div class="row-note">契約時に締結</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/bxk1msonsg0fsk0h6wz8w/B-_20260302.doc?rlkey=ihbm8gxayr0t12wept3jo5cel&amp;st=6t8siy1a&amp;dl=0" target="_blank" rel="noopener">就B契約書_20260302.doc</a><div class="url">https://www.dropbox.com/scl/fi/bxk1msonsg0fsk0h6wz8w/B-_20260302.doc?rlkey=ihbm8gxayr0t12wept3jo5cel&amp;st=6t8siy1a&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/033.pdf" target="_blank" rel="noopener">契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/033.pdf</div></td>
+</tr>
+<tr id="row-review-g7r1">
+  <td class="no">11</td>
+  <td class="name"><div class="title">重要事項説明書</div><div class="row-note">契約時に説明・交付</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/48at57tut5o3km2cf8j11/_20260302.doc?rlkey=zlkzdmqaalpflr0y7bh58e7y6&amp;st=00lfygbe&amp;dl=0" target="_blank" rel="noopener">重要事項説明書_20260302.doc</a><div class="url">https://www.dropbox.com/scl/fi/48at57tut5o3km2cf8j11/_20260302.doc?rlkey=zlkzdmqaalpflr0y7bh58e7y6&amp;st=00lfygbe&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/034.pdf" target="_blank" rel="noopener">重要事項説明書_マニュアル.pdf</a><div class="url">https://example.com/manuals/034.pdf</div></td>
+</tr>
+<tr id="row-review-g7r2">
+  <td class="no">12</td>
+  <td class="name"><div class="title">工賃規程</div><div class="row-note">契約時に説明（運営規程・重要事項説明書に記載があれば省略可）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/l8ishxzr7egcgp873ufng/_20260327.docx?rlkey=vx4mnyatzm688rwqo9t558z9v&amp;st=ekp19oub&amp;dl=0" target="_blank" rel="noopener">工賃規定_20260327.docx</a><div class="url">https://www.dropbox.com/scl/fi/l8ishxzr7egcgp873ufng/_20260327.docx?rlkey=vx4mnyatzm688rwqo9t558z9v&amp;st=ekp19oub&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/035.pdf" target="_blank" rel="noopener">工賃規程_マニュアル.pdf</a><div class="url">https://example.com/manuals/035.pdf</div></td>
+</tr>
+<tr id="row-review-g7r3">
+  <td class="no">13</td>
+  <td class="name"><div class="title">緊急やむを得ない身体拘束に関する承諾書</div><div class="row-note">必要時に契約時等に取得</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/700shlz693tey3jwr16kc/_20260325.doc?rlkey=pazxh3kvwchfcj44rd3ncelfn&amp;st=yn5ybfq9&amp;dl=0" target="_blank" rel="noopener">緊急時やむを得ない身体拘束に関する説明書及び同意書_20260325.doc</a><div class="url">https://www.dropbox.com/scl/fi/700shlz693tey3jwr16kc/_20260325.doc?rlkey=pazxh3kvwchfcj44rd3ncelfn&amp;st=yn5ybfq9&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/11bwq2vp1rf9ylhtqaqet/.pdf?rlkey=u53uk994p52m47erzd0s93mxh&amp;st=3vhukic8&amp;dl=0" target="_blank" rel="noopener">利用者家族へ身体拘束承諾の説明について.pdf</a><div class="url">https://www.dropbox.com/scl/fi/11bwq2vp1rf9ylhtqaqet/.pdf?rlkey=u53uk994p52m47erzd0s93mxh&amp;st=3vhukic8&amp;dl=0</div></td>
+</tr>
+<tr id="row-asneeded-13">
+  <td class="no">18</td>
+  <td class="name"><div class="title">主治医又は主治医以外の医師の指示書</div><div class="row-note">医療連携体制加算：希望確認後、医師に発行してもらう</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/037.pdf" target="_blank" rel="noopener">主治医又は主治医以外の医師の指示書.pdf</a><div class="url">https://example.com/templates/037.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/037.pdf" target="_blank" rel="noopener">主治医又は主治医以外の医師の指示書_マニュアル.pdf</a><div class="url">https://example.com/manuals/037.pdf</div></td>
+</tr>
+<tr id="row-review-g4r1">
+  <td class="no">28</td>
+  <td class="name"><div class="title">運転者台帳</div><div class="row-note">送迎加算：運転者ごとに整備</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/038.pdf" target="_blank" rel="noopener">運転者台帳.pdf</a><div class="url">https://example.com/templates/038.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/038.pdf" target="_blank" rel="noopener">運転者台帳_マニュアル.pdf</a><div class="url">https://example.com/manuals/038.pdf</div></td>
+</tr>
+<tr id="row-asneeded-15">
+  <td class="no">30</td>
+  <td class="name"><div class="title">交通事故報告書</div><div class="row-note">送迎時に事故が発生した場合のみ作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/039.pdf" target="_blank" rel="noopener">交通事故報告書.pdf</a><div class="url">https://example.com/templates/039.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/039.pdf" target="_blank" rel="noopener">交通事故報告書_マニュアル.pdf</a><div class="url">https://example.com/manuals/039.pdf</div></td>
+</tr>
+<tr id="row-semiannual-6">
+  <td class="no">35</td>
+  <td class="name"><div class="title">在宅支援アセスメント</div><div class="row-note">在宅支援開始時・見直し時に実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/040.pdf" target="_blank" rel="noopener">在宅支援アセスメント.pdf</a><div class="url">https://example.com/templates/040.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/040.pdf" target="_blank" rel="noopener">在宅支援アセスメント_マニュアル.pdf</a><div class="url">https://example.com/manuals/040.pdf</div></td>
+</tr>
+<tr id="row-review-g6r1">
+  <td class="no">36</td>
+  <td class="name"><div class="title">在宅支援サービスに関する同意書</div><div class="row-note">在宅支援開始時に取得</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/w9uokfmazzgl8lzhmeb99/_20260216.xlsx?rlkey=uwx6t8q2r174occaproqf676s&amp;st=1herl7p1&amp;dl=0" target="_blank" rel="noopener">在宅支援サービスに関する同意書_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/w9uokfmazzgl8lzhmeb99/_20260216.xlsx?rlkey=uwx6t8q2r174occaproqf676s&amp;st=1herl7p1&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/041.pdf" target="_blank" rel="noopener">在宅支援サービスに関する同意書_マニュアル.pdf</a><div class="url">https://example.com/manuals/041.pdf</div></td>
+</tr>
+<tr id="row-asneeded-18">
+  <td class="no">40</td>
+  <td class="name"><div class="title">欠席時対応記録</div><div class="row-note">利用者が欠席した場合にその都度記入・保管</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/042.pdf" target="_blank" rel="noopener">欠席時対応記録.pdf</a><div class="url">https://example.com/templates/042.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/042.pdf" target="_blank" rel="noopener">欠席時対応記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/042.pdf</div></td>
+</tr>
+<tr id="row-asneeded-19">
+  <td class="no">50</td>
+  <td class="name"><div class="title">レクリエーション実施記録</div><div class="row-note">実施した場合のみ作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/043.pdf" target="_blank" rel="noopener">レクリエーション実施記録.pdf</a><div class="url">https://example.com/templates/043.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/043.pdf" target="_blank" rel="noopener">レクリエーション実施記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/043.pdf</div></td>
+</tr>
+<tr id="row-asneeded-20">
+  <td class="no">51</td>
+  <td class="name"><div class="title">就労定着支援記録</div><div class="row-note">該当者がいる場合、1ヶ月に1回以上作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/044.pdf" target="_blank" rel="noopener">就労定着支援記録.pdf</a><div class="url">https://example.com/templates/044.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/044.pdf" target="_blank" rel="noopener">就労定着支援記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/044.pdf</div></td>
+</tr>
+<tr id="row-asneeded-21">
+  <td class="no">52</td>
+  <td class="name"><div class="title">苦情や要望の対応記録</div><div class="row-note">苦情・要望対応時に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/xtswa0xjzlwx53zdi16c3/_20260326.doc?rlkey=ccq35q2kgl1d35c4qm89jai86&amp;st=wve2kor8&amp;dl=0" target="_blank" rel="noopener">苦情（相談）対応記録_20260326.doc</a><div class="url">https://www.dropbox.com/scl/fi/xtswa0xjzlwx53zdi16c3/_20260326.doc?rlkey=ccq35q2kgl1d35c4qm89jai86&amp;st=wve2kor8&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/045.pdf" target="_blank" rel="noopener">苦情や要望の対応記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/045.pdf</div></td>
+</tr>
+<tr id="row-asneeded-22">
+  <td class="no">53</td>
+  <td class="name"><div class="title">事故・ひやりはっと記録</div><div class="row-note">事故・ヒヤリハット発生時に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/ppzymvu1ll47mlamj6g1x/_20260326.xlsx?rlkey=wnnbzfxbfa8rfm67jqy8ua7ym&amp;st=r5bhppti&amp;dl=0" target="_blank" rel="noopener">事故・ヒヤリハット報告書_20260326.xlsx</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/l1asbk08icckl8q7oir5f/.pdf?rlkey=5qekzycg0coo9p0ilvsiwkgh5&amp;st=3blvkaxr&amp;dl=0" target="_blank" rel="noopener">事故発生時の対応.pdf</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/ljf5kwyfc4cgq7jporpsm/2.xlsx?rlkey=wekrrfe3v9zsz2czb8qnqrt75&amp;st=7yhokepu&amp;dl=0" target="_blank" rel="noopener">17-2 事故・ヒヤリハット報告書（雛形）.xlsx</a></li></ul></td>
+</tr>
+<tr id="row-asneeded-23">
+  <td class="no">54</td>
+  <td class="name"><div class="title">身体拘束の対応記録</div><div class="row-note">身体拘束を行った場合に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/5x3e0iqv9kyfqet0o4xzf/_20260326.docx?rlkey=cg61hmkxyc0oumdyzrd9m0mzo&amp;st=al7ap92l&amp;dl=0" target="_blank" rel="noopener">身体的拘束時の記録_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/5x3e0iqv9kyfqet0o4xzf/_20260326.docx?rlkey=cg61hmkxyc0oumdyzrd9m0mzo&amp;st=al7ap92l&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/047.pdf" target="_blank" rel="noopener">身体拘束の対応記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/047.pdf</div></td>
+</tr>
+<tr id="row-asneeded-24">
+  <td class="no">55</td>
+  <td class="name"><div class="title">虐待の対応記録</div><div class="row-note">虐待事案発生時に作成（障がい者虐待レビューシート・報告書を含む）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/i8bmxnum63i01n5ci8ur3/.xlsx?rlkey=c63zvwef5yuq5smtin96qz3a5&amp;st=ej10ikr8&amp;dl=0" target="_blank" rel="noopener">虐待対応記録.xlsx</a></li><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/oie00hqqlkclrbllypeu0/.docx?rlkey=t2mvn81hfwet3trznev4q6v8f&amp;st=icrmphy6&amp;dl=0" target="_blank" rel="noopener">聞取り調査票（虐待者用）.docx</a></li><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/kbj2ff1z3coub1tomjoq5/.docx?rlkey=w3fpzfb5kro17qwkje5nekyzb&amp;st=e3e9uezp&amp;dl=0" target="_blank" rel="noopener">聞取り調査票（職員用）.docx</a></li></ul></td>
+</tr>
+<tr id="row-review-g7r4">
+  <td class="no">75</td>
+  <td class="name"><div class="title">契約終了理由書</div><div class="row-note">利用者が契約終了した場合に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/uye4mqu8uun0wr86xgd2n/_20260325.docx?rlkey=0u8j9a0u7m1bevz7quq5n1ddb&amp;st=w0ivrv5x&amp;dl=0" target="_blank" rel="noopener">契約終了理由書_20260325.docx</a><div class="url">https://www.dropbox.com/scl/fi/uye4mqu8uun0wr86xgd2n/_20260325.docx?rlkey=0u8j9a0u7m1bevz7quq5n1ddb&amp;st=w0ivrv5x&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/pi6dch1l5rcpgvfbwy1cn/_-_ver202504.pdf?rlkey=5prieckxkpkowoxx61zt4pg7k&amp;st=skl9j909&amp;dl=0" target="_blank" rel="noopener">契約終了理由書_補足_ver202504.pdf</a><div class="url">https://www.dropbox.com/scl/fi/pi6dch1l5rcpgvfbwy1cn/_-_ver202504.pdf?rlkey=5prieckxkpkowoxx61zt4pg7k&amp;st=skl9j909&amp;dl=0</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="quarterly">
+<h2 class="cat-title" style="background:#E0B92E">● 3ヶ月</h2>
+<p class="desc">3ヶ月に1回のペースで実施・作成する委員会議事録等。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-quarterly-0">
+  <td class="no">56</td>
+  <td class="name"><div class="title">感染症及び食中毒の予防及び蔓延防止の委員会議事録</div><div class="row-note">3ヶ月に1回、委員会を開催</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-other" href="https://www.dropbox.com/scl/fi/2giojy51r2kbore4o84zg/_20260326.rtf?rlkey=296gc4grg0c5bz8ag8ci8sjzp&amp;st=rxl7ml1t&amp;dl=0" target="_blank" rel="noopener">感染症予防及び蔓延防止委員会実施記録_20260326.rtf</a><div class="url">https://www.dropbox.com/scl/fi/2giojy51r2kbore4o84zg/_20260326.rtf?rlkey=296gc4grg0c5bz8ag8ci8sjzp&amp;st=rxl7ml1t&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/050.pdf" target="_blank" rel="noopener">感染症及び食中毒の予防及び蔓延防止の委員会議事録_マニュアル.pdf</a><div class="url">https://example.com/manuals/050.pdf</div></td>
+</tr>
+<tr id="row-quarterly-1">
+  <td class="no">57</td>
+  <td class="name"><div class="title">目標工賃達成支援会議議事録</div><div class="row-note">目標工賃達成指導員配置加算又は目標工賃達成加算を算定している場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/djdo160sp4p3yhk6rqfsu/_20260326.xlsx?rlkey=x0x06fcln0xvl43bm1p802lrz&amp;st=6u1iypm0&amp;dl=0" target="_blank" rel="noopener">目標工賃達成支援会議議事録_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/djdo160sp4p3yhk6rqfsu/_20260326.xlsx?rlkey=x0x06fcln0xvl43bm1p802lrz&amp;st=6u1iypm0&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/051.pdf" target="_blank" rel="noopener">目標工賃達成支援会議議事録_マニュアル.pdf</a><div class="url">https://example.com/manuals/051.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="note">※障がい者トライアル雇用の対象者については、個別支援計画関連（モニタリング・アセスメント・ニーズ整理表・個別支援計画（案）・会議議事録・個別支援計画）の見直しサイクルが、6ヶ月ではなく3ヶ月に1回となります。</div>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="semiannual">
+<h2 class="cat-title" style="background:#8E6FC4">● 6ヶ月</h2>
+<p class="desc">6ヶ月に1回のペースで実施するモニタリング・個別支援計画の見直し・研修・訓練等。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-semiannual-0">
+  <td class="no">42</td>
+  <td class="name"><div class="title">モニタリング</div><div class="row-note">利用者の状況を再度聞き取り、計画を見直す</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/wg2dqn5jve29umet850kw/_20260325.xlsx?rlkey=w5bvs3ekjuuff11uxgjre145d&amp;st=jqbx0dri&amp;dl=0" target="_blank" rel="noopener">モニタリング_20260325.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/wg2dqn5jve29umet850kw/_20260325.xlsx?rlkey=w5bvs3ekjuuff11uxgjre145d&amp;st=jqbx0dri&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/052.pdf" target="_blank" rel="noopener">モニタリング_マニュアル.pdf</a><div class="url">https://example.com/manuals/052.pdf</div></td>
+</tr>
+<tr id="row-semiannual-1">
+  <td class="no">3</td>
+  <td class="name"><div class="title">アセスメント</div><div class="row-note">6ヶ月ごとの見直しで再実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/9i7rqo71d25ddlwekx7r1/1-4_20260528.xlsx?rlkey=n1ru18ghbvf3lb09arl2rck0m&amp;st=xdv9ssl9&amp;dl=0" target="_blank" rel="noopener">アセスメント1～4_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/9i7rqo71d25ddlwekx7r1/1-4_20260528.xlsx?rlkey=n1ru18ghbvf3lb09arl2rck0m&amp;st=xdv9ssl9&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/053.pdf" target="_blank" rel="noopener">アセスメント_マニュアル.pdf</a><div class="url">https://example.com/manuals/053.pdf</div></td>
+</tr>
+<tr id="row-semiannual-2">
+  <td class="no">4</td>
+  <td class="name"><div class="title">ニーズ整理表</div><div class="row-note">アセスメントを基に再整理</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/jmcpdg9hlt9m6y3zi3645/_20260528.xlsx?rlkey=ubhzz92hngw5vwtl7rdlio3ka&amp;st=2bwyw9jv&amp;dl=0" target="_blank" rel="noopener">ニーズ整理票_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/jmcpdg9hlt9m6y3zi3645/_20260528.xlsx?rlkey=ubhzz92hngw5vwtl7rdlio3ka&amp;st=2bwyw9jv&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/054.pdf" target="_blank" rel="noopener">ニーズ整理表_マニュアル.pdf</a><div class="url">https://example.com/manuals/054.pdf</div></td>
+</tr>
+<tr id="row-semiannual-3">
+  <td class="no">5</td>
+  <td class="name"><div class="title">個別支援計画（案）</div><div class="row-note">見直し後に作成</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/w2hex720hxmll7rz7osh6/_20260216.xlsx?rlkey=5ege62cnvz03f29qqh7zqmsp8&amp;st=36g8lhwj&amp;dl=0" target="_blank" rel="noopener">個別支援計画（案）_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/w2hex720hxmll7rz7osh6/_20260216.xlsx?rlkey=5ege62cnvz03f29qqh7zqmsp8&amp;st=36g8lhwj&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/055.pdf" target="_blank" rel="noopener">個別支援計画（案）_マニュアル.pdf</a><div class="url">https://example.com/manuals/055.pdf</div></td>
+</tr>
+<tr id="row-semiannual-4">
+  <td class="no">6</td>
+  <td class="name"><div class="title">個別支援会議議事録</div><div class="row-note">見直し後に会議を実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/e671cjlmir8z5ss7wmofz/_20260528.xlsx?rlkey=0zg2vokmry0hu3knpx5aoxl79&amp;st=dbmiyb6r&amp;dl=0" target="_blank" rel="noopener">個別支援会議（ケース会議）議事録_20260528.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/e671cjlmir8z5ss7wmofz/_20260528.xlsx?rlkey=0zg2vokmry0hu3knpx5aoxl79&amp;st=dbmiyb6r&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/056.pdf" target="_blank" rel="noopener">個別支援会議議事録_マニュアル.pdf</a><div class="url">https://example.com/manuals/056.pdf</div></td>
+</tr>
+<tr id="row-semiannual-5">
+  <td class="no">9</td>
+  <td class="name"><div class="title">個別支援計画</div><div class="row-note">見直し後に作成・交付</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/s7mwyoqy4gpquppcptlbr/_20260216.xlsx?rlkey=tw9yfhsk3610qtod4bo1989jk&amp;st=isa1f67y&amp;dl=0" target="_blank" rel="noopener">個別支援計画（正）_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/s7mwyoqy4gpquppcptlbr/_20260216.xlsx?rlkey=tw9yfhsk3610qtod4bo1989jk&amp;st=isa1f67y&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/057.pdf" target="_blank" rel="noopener">個別支援計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/057.pdf</div></td>
+</tr>
+<tr id="row-semiannual-6">
+  <td class="no">35</td>
+  <td class="name"><div class="title">在宅支援アセスメント</div><div class="row-note">在宅支援：6ヶ月に1回以上実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/058.pdf" target="_blank" rel="noopener">在宅支援アセスメント.pdf</a><div class="url">https://example.com/templates/058.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/058.pdf" target="_blank" rel="noopener">在宅支援アセスメント_マニュアル.pdf</a><div class="url">https://example.com/manuals/058.pdf</div></td>
+</tr>
+<tr id="row-semiannual-7">
+  <td class="no">26</td>
+  <td class="name"><div class="title">BMI又は体重の記録</div><div class="row-note">食事提供体制加算：6ヶ月ごとに記録</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/059.pdf" target="_blank" rel="noopener">BMI又は体重の記録.pdf</a><div class="url">https://example.com/templates/059.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/059.pdf" target="_blank" rel="noopener">BMI又は体重の記録_マニュアル.pdf</a><div class="url">https://example.com/manuals/059.pdf</div></td>
+</tr>
+<tr id="row-semiannual-8">
+  <td class="no">58</td>
+  <td class="name"><div class="title">感染症及び食中毒の予防及び蔓延防止の研修実施記録・感想文・訓練実施記録</div><div class="row-note">年間事業・研修計画に基づき実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/k0zwjuynke55t4abjkpyy/_20260326.xlsx?rlkey=80kjircc8jso677eizve0nnd6&amp;st=v4ceuoqi&amp;dl=0" target="_blank" rel="noopener">感染症及び食中毒の予防及びまん延防止の訓練記録_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/k0zwjuynke55t4abjkpyy/_20260326.xlsx?rlkey=80kjircc8jso677eizve0nnd6&amp;st=v4ceuoqi&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/2jdv87xme3fmya9o140ml/_20260326.xlsx?rlkey=z24ftndtfws4ml0q030i4d6ro&amp;st=82en2gav&amp;dl=0" target="_blank" rel="noopener">感染症及び蔓延防止に関する研修の感想文_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/2jdv87xme3fmya9o140ml/_20260326.xlsx?rlkey=z24ftndtfws4ml0q030i4d6ro&amp;st=82en2gav&amp;dl=0</div></td>
+</tr>
+<tr id="row-semiannual-9">
+  <td class="no">59</td>
+  <td class="name"><div class="title">避難訓練（訓練実施結果報告書）</div><div class="row-note">年間事業・研修計画に基づき実施</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/e4xbrm9qek8prpgw4h23l/_20260326.docx?rlkey=feesqqbh94lrn11w3ngj77wgl&amp;st=m4ngqlm8&amp;dl=0" target="_blank" rel="noopener">避難訓練実施結果報告書_20260326.docx</a></li><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/dftg8zg0jdx0ygfontapr/.docx?rlkey=kyv2drr8eob56pucfa21slfbq&amp;st=d8fd9men&amp;dl=0" target="_blank" rel="noopener">避難訓練実施結果報告書（記載例）.docx</a></li><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/jbs1s3o5o6u81xi974e7s/87_396_20260317_.docx?rlkey=jig5e9sxfsbjdbn2prigjif98&amp;st=rw1qvz2m&amp;dl=0" target="_blank" rel="noopener">87_396_20260317_避難訓練実施結果報告書（雛形）.docx</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/z5fzdfv59cil4m9ahpg66/396_20260317_.pdf?rlkey=rcfwxi2esosm1x3jji2hqqspj&amp;st=hgk82v2k&amp;dl=0" target="_blank" rel="noopener">396_20260317_屋内消火栓の使い方.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/np3jri3xi54dv2xq9rdq4/396_20260317_.pdf?rlkey=ho6g09iicng3mwunc5kjlr1b8&amp;st=dogymn2q&amp;dl=0" target="_blank" rel="noopener">396_20260317_消火器の使い方.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/gop10yqz4o6zloebhycm2/396_20260317_.pdf?rlkey=kzc7soganmdaiv9i4xw4ll1ye&amp;st=p8yhrfrv&amp;dl=0" target="_blank" rel="noopener">396_20260317_総合訓練.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/lm6lner4sz1zkjzpttltv/396_20260317_.pdf?rlkey=ig4wnu7nkgmzpbb68dlr5f52k&amp;st=ve7u0k0d&amp;dl=0" target="_blank" rel="noopener">396_20260317_通報訓練.pdf</a></li><li><a class="link link-real ft-other" href="https://www.dropbox.com/scl/fi/mo83za2ris8p58ms04ivg/396_20260317_.png?rlkey=5iv9ppy3erfutpqtrt3wzyldf&amp;st=ztguhrep&amp;dl=0" target="_blank" rel="noopener">396_20260317_通報判断基準.png</a></li><li><a class="link link-real ft-other" href="https://www.dropbox.com/scl/fi/ruofd19ecm1ntrojy9mjn/396_20260317_.jpg?rlkey=p6z2196adv50v1m7zer4yx2oo&amp;st=yfuk0kuf&amp;dl=0" target="_blank" rel="noopener">396_20260317_避難て何すれば良いの？.jpg</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/nd0pkhxhe62rmfcz1y6bt/396_20260317_.pdf?rlkey=rirymm2fu6xnxzuyb04y2eith&amp;st=t8qiejll&amp;dl=0" target="_blank" rel="noopener">396_20260317_避難訓練.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/hc5cuwu7taw2zns40lzv1/396_20260317_.pdf?rlkey=wqfczqf2ckb3b4rplcsv3wcju&amp;st=pm3vxig6&amp;dl=0" target="_blank" rel="noopener">396_20260317_避難指示までに必ず避難.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/dyrmtdjyymek9r4objxlg/396_20260317_.pdf?rlkey=de0gdv1yfdth76tkkbtpms39w&amp;st=syvszt4z&amp;dl=0" target="_blank" rel="noopener">396_20260317_避難事例集.pdf</a></li></ul></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="annual">
+<h2 class="cat-title" style="background:#8A5A4E">● 1年</h2>
+<p class="desc">年度単位で作成・実施・報告するもの（年間計画、各種研修、決算、公表等）。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr id="row-review-g0r1">
+  <td class="no">60</td>
+  <td class="name"><div class="title">年間事業・研修計画</div><div class="row-note">※年度が始まる前に作成する（全研修・訓練計画の起点）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/0yeu2eh3rjpl3tpylu03p/_20260326.xlsx?rlkey=wejqcytf41he9r5xuycbaytjf&amp;st=spfez5w6&amp;dl=0" target="_blank" rel="noopener">年間計画.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/0yeu2eh3rjpl3tpylu03p/_20260326.xlsx?rlkey=wejqcytf41he9r5xuycbaytjf&amp;st=spfez5w6&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/8td86sjelznnqexfo8b5t/.xlsx?rlkey=rxmbeisgqlczperjox3opjykp&amp;st=6y5cvbbz&amp;dl=0" target="_blank" rel="noopener">職員研修実施報告書例.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/8td86sjelznnqexfo8b5t/.xlsx?rlkey=rxmbeisgqlczperjox3opjykp&amp;st=6y5cvbbz&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-1">
+  <td class="no">61</td>
+  <td class="name"><div class="title">ハラスメントの防止の研修実施記録・感想文</div><div class="row-note">労働者向け・管理者向け自習用テキストを使用</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/xuzlfsjowjk1s9d11lqg8/_20260326.xlsx?rlkey=p7k57l1i09yk11am3sz1d2pl0&amp;st=5g42sliy&amp;dl=0" target="_blank" rel="noopener">ハラスメント防止のための研修感想文_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/xuzlfsjowjk1s9d11lqg8/_20260326.xlsx?rlkey=p7k57l1i09yk11am3sz1d2pl0&amp;st=5g42sliy&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/1ohgb5dqc3apm5qe5xehn/_20260326.pdf?rlkey=mqt0z3nasqwkfgst632dchzr6&amp;st=9fvcvl0r&amp;dl=0" target="_blank" rel="noopener">職場におけるハラスメント対策マニュアル_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/1ohgb5dqc3apm5qe5xehn/_20260326.pdf?rlkey=mqt0z3nasqwkfgst632dchzr6&amp;st=9fvcvl0r&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-2">
+  <td class="no">62</td>
+  <td class="name"><div class="title">虐待防止委員会議事録</div><div class="row-note">年1回以上開催</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/ocyzaeplm8pbvqrrk2kxe/_20260326.docx?rlkey=i0k8lyumdves410zrxn5jqnwy&amp;st=y04ekh59&amp;dl=0" target="_blank" rel="noopener">虐待防止検討委員会議事録_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/ocyzaeplm8pbvqrrk2kxe/_20260326.docx?rlkey=i0k8lyumdves410zrxn5jqnwy&amp;st=y04ekh59&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-other" href="https://www.dropbox.com/scl/fi/s5finu4s54o6pzdxhqlxr/81_20260317_Vol.1.2.rtf?rlkey=d25cegvzpz3rgf6jv258gg35p&amp;st=mjolezl9&amp;dl=0" target="_blank" rel="noopener">81_20260317_Vol.1.2虐待防止委員会実施記録（記載例）.rtf</a><div class="url">https://www.dropbox.com/scl/fi/s5finu4s54o6pzdxhqlxr/81_20260317_Vol.1.2.rtf?rlkey=d25cegvzpz3rgf6jv258gg35p&amp;st=mjolezl9&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g9r4">
+  <td class="no">63</td>
+  <td class="name"><div class="title">虐待防止計画</div><div class="row-note">委員会で策定</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/9y4ius64uufmwo1xiksvt/_20260326.docx?rlkey=su71yol7beurihthtrp8ft2vk&amp;st=gn8le3vl&amp;dl=0" target="_blank" rel="noopener">虐待防止のための計画_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/9y4ius64uufmwo1xiksvt/_20260326.docx?rlkey=su71yol7beurihthtrp8ft2vk&amp;st=gn8le3vl&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/065.pdf" target="_blank" rel="noopener">虐待防止計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/065.pdf</div></td>
+</tr>
+<tr id="row-annual-4">
+  <td class="no">64</td>
+  <td class="name"><div class="title">虐待防止の研修実施記録・感想文</div><div class="row-note">「虐待の防止と対応」研修資料を使用</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/b6vmvst3socljf1sdocbb/_20260326.xlsx?rlkey=8k9x37emcai46dvo8cs8ozhke&amp;st=h89a5f5k&amp;dl=0" target="_blank" rel="noopener">虐待防止のための研修感想文_20260326.xlsx</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/2dnayzh9pyba106izeix2/83_20260317_.xlsx?rlkey=uvnzu9n58ws35993a9ydj0yxb&amp;st=l31xa1hd&amp;dl=0" target="_blank" rel="noopener">83_20260317_虐待防止研修 感想文（雛形）.xlsx</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/sdzs8vp2ao5t586q6iht5/83_20260317_.xlsx?rlkey=p9z4kjjmn7odclj5ceoymd5bs&amp;st=97vtxy0j&amp;dl=0" target="_blank" rel="noopener">83_20260317_虐待防止研修実施報告書（雛形）.xlsx</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/jwqx9ibllkewc7g9ch19e/83_20260317_-vol1..pdf?rlkey=tpmmv1ssn2dz4sqafshq3uusa&amp;st=0tc20iiy&amp;dl=0" target="_blank" rel="noopener">83_20260317_障害者虐待の防止と対応  vol1.虐待の定義、種類、留意点.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/n8mkezs6rttfh9oos7w5h/83_20260317_-vol2.pdf?rlkey=qe4r92e830bmnm4k1hf0qso63&amp;st=cpvumuou&amp;dl=0" target="_blank" rel="noopener">83_20260317_障害者虐待の防止と対応  vol2未然防止と早期発見.pdf</a></li></ul></td>
+</tr>
+<tr id="row-annual-5">
+  <td class="no">65</td>
+  <td class="name"><div class="title">業務継続計画（BCP）感染症・自然災害の研修実施記録・感想文・訓練実施記録</div><div class="row-note">BCP訓練・避難訓練報告書を含む</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/66hgh36ti3am9jvjitocr/_20260326.xlsx?rlkey=690a1qlhsbx5npx1vvca34kdm&amp;st=ss6wda6l&amp;dl=0" target="_blank" rel="noopener">感染症訓練記録_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/66hgh36ti3am9jvjitocr/_20260326.xlsx?rlkey=690a1qlhsbx5npx1vvca34kdm&amp;st=ss6wda6l&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/corvho9wpv70zzzqg1o3b/_20260326.xlsx?rlkey=um9jejjhcpzc3zm9axe36g5tf&amp;st=hspx4v3t&amp;dl=0" target="_blank" rel="noopener">感染症研修記録_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/corvho9wpv70zzzqg1o3b/_20260326.xlsx?rlkey=um9jejjhcpzc3zm9axe36g5tf&amp;st=hspx4v3t&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-6">
+  <td class="no">66</td>
+  <td class="name"><div class="title">身体拘束適正化等の委員会議事録</div><div class="row-note">年1回以上開催</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/cp8ktg56ut9u8uq0xwjjv/_20260326.docx?rlkey=egdsg7h97x6a5b65ddexejjt9&amp;st=8o8zc7uq&amp;dl=0" target="_blank" rel="noopener">身体的拘束適正化検討委員会議事録_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/cp8ktg56ut9u8uq0xwjjv/_20260326.docx?rlkey=egdsg7h97x6a5b65ddexejjt9&amp;st=8o8zc7uq&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/cyrxm8am3gmqegebl778b/92_20260317_.docx?rlkey=v1k88zaycrggc2fjvd0awoc81&amp;st=3wms2fi8&amp;dl=0" target="_blank" rel="noopener">92_20260317_身体的拘束適正化検討委員会議事録（記載例.docx</a><div class="url">https://www.dropbox.com/scl/fi/cyrxm8am3gmqegebl778b/92_20260317_.docx?rlkey=v1k88zaycrggc2fjvd0awoc81&amp;st=3wms2fi8&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-7">
+  <td class="no">67</td>
+  <td class="name"><div class="title">身体拘束適正化等の研修実施記録・感想文</div><div class="row-note">「身体拘束」研修資料を使用</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/e9p9ejs2j7w9zvsdbsp1n/_20260326.xlsx?rlkey=bcibfhnktgzrrlsixhfzhrsz6&amp;st=6yqr9cq1&amp;dl=0" target="_blank" rel="noopener">身体拘束等の適正化研修に関する記録_20260326.xlsx</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/ta70s71lpomi7vgh81v12/93_20260317_.xlsx?rlkey=77n1qrshu3u3u19s0doyvt2oh&amp;st=mspkl90c&amp;dl=0" target="_blank" rel="noopener">93_20260317_身体拘束適正化研修 感想文（雛形）.xlsx</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/zrryihxrhdcdn8sus1lya/93_20260317_.xlsx?rlkey=5g2v71g6mg8u8jnnsgboymywp&amp;st=q3zb6fr0&amp;dl=0" target="_blank" rel="noopener">93_20260317_身体拘束適正化研修実施報告書（雛形）.xlsx</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/c0htwamt8tds3tjfxg0dr/93_20260317_-vol1.pdf?rlkey=jc6we70s7nljhsuw97uail4ln&amp;st=otcexlyq&amp;dl=0" target="_blank" rel="noopener">93_20260317_身体拘束vol1.pdf</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/30v46gqq2wpijbct6fkld/93_20260317_-vol2.pdf?rlkey=ba75f9ixg6az3khoiklkmyyc4&amp;st=vx3g4ism&amp;dl=0" target="_blank" rel="noopener">93_20260317_身体拘束vol2.pdf</a></li></ul></td>
+</tr>
+<tr id="row-annual-8">
+  <td class="no">68</td>
+  <td class="name"><div class="title">福祉・介護職員等処遇改善加算区分に関する書類</div><div class="row-note">(1)研修計画・研修実施記録・感想文 (2)処遇改善計画 (3)職場環境要件の実施 (4)処遇改善実績報告書　※計画は4/15まで、実績報告書は7月末までに市町村へ報告</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/nbyxfq2h34xn8943vev35/.xlsx?rlkey=2kfvmifkzwgbc0ayc8me9kgxt&amp;st=adix3pn0&amp;dl=0" target="_blank" rel="noopener">★処遇改善加算やることリスト.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/nbyxfq2h34xn8943vev35/.xlsx?rlkey=2kfvmifkzwgbc0ayc8me9kgxt&amp;st=adix3pn0&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/ruhu3zzf7wxo2smcfv2pa/.pdf?rlkey=kulmfeltqy9x2pk8escn6blul&amp;st=ey6w4vrr&amp;dl=0" target="_blank" rel="noopener">処遇改善加算の職場環境等要件 表.pdf</a><div class="url">https://www.dropbox.com/scl/fi/ruhu3zzf7wxo2smcfv2pa/.pdf?rlkey=kulmfeltqy9x2pk8escn6blul&amp;st=ey6w4vrr&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-9">
+  <td class="no">69</td>
+  <td class="name"><div class="title">WAMネットにて公表</div><div class="row-note">決算書等を含め、報告期間は5月末まで（新規指定の場合は指定後1ヶ月以内）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/071.pdf" target="_blank" rel="noopener">WAMネットにて公表.pdf</a><div class="url">https://example.com/templates/071.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/071.pdf" target="_blank" rel="noopener">WAMネットにて公表_マニュアル.pdf</a><div class="url">https://example.com/manuals/071.pdf</div></td>
+</tr>
+<tr id="row-annual-10">
+  <td class="no">70</td>
+  <td class="name"><div class="title">苦情や要望の研修実施記録・感想文</div><div class="row-note">苦情解決ハンドブックを使用</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/glg7l4jxa08yptc18uo0n/_20260326.xlsx?rlkey=uticmh769fldp357ap1vka3k7&amp;st=9mk6take&amp;dl=0" target="_blank" rel="noopener">苦情や要望に関する研修感想文_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/glg7l4jxa08yptc18uo0n/_20260326.xlsx?rlkey=uticmh769fldp357ap1vka3k7&amp;st=9mk6take&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/072.pdf" target="_blank" rel="noopener">苦情や要望の研修実施記録・感想文_マニュアル.pdf</a><div class="url">https://example.com/manuals/072.pdf</div></td>
+</tr>
+<tr id="row-annual-11">
+  <td class="no">71</td>
+  <td class="name"><div class="title">健康診断</div><div class="row-note">予約・受診後に健康診断書・受診確認表を保管</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/u6ej0hihkiibnl561hg89/.pdf.pdf?rlkey=q4w8a4a5c6byakq1ylgp5e3u4&amp;st=zzww9mbm&amp;dl=0" target="_blank" rel="noopener">健康診断受診内容の参考.pdf</a><div class="url">https://www.dropbox.com/scl/fi/u6ej0hihkiibnl561hg89/.pdf.pdf?rlkey=q4w8a4a5c6byakq1ylgp5e3u4&amp;st=zzww9mbm&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/bqwx8m1vbj2boptwul53w/_ver202504.xlsx?rlkey=vcb3ojo8mpia5yrthghi8p8m3&amp;st=vzo0f4k3&amp;dl=0" target="_blank" rel="noopener">従業者の健康診断受診確認表_ver202504.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/bqwx8m1vbj2boptwul53w/_ver202504.xlsx?rlkey=vcb3ojo8mpia5yrthghi8p8m3&amp;st=vzo0f4k3&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-12">
+  <td class="no">72</td>
+  <td class="name"><div class="title">地域との連携記録</div><div class="row-note">加算算定している場合に必要</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/1zmedsm77waq2jzd9i5yw/_20260326.xlsx?rlkey=pkchwxylj7nlxmge5rbtcb2l9&amp;st=k73k500s&amp;dl=0" target="_blank" rel="noopener">医療機関・他の福祉サービス事業者等との連携の記録_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/1zmedsm77waq2jzd9i5yw/_20260326.xlsx?rlkey=pkchwxylj7nlxmge5rbtcb2l9&amp;st=k73k500s&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/nanjoxef2p14d28v1xel8/_-_20260326.docx?rlkey=794ncfh43pnfvmvon86cwj6qj&amp;st=5pfbtskd&amp;dl=0" target="_blank" rel="noopener">地域連携_清掃活動_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/nanjoxef2p14d28v1xel8/_-_20260326.docx?rlkey=794ncfh43pnfvmvon86cwj6qj&amp;st=5pfbtskd&amp;dl=0</div></td>
+</tr>
+<tr id="row-annual-13">
+  <td class="no">73</td>
+  <td class="name"><div class="title">ピアサポート研修実施記録・感想文</div><div class="row-note">ピアサポート加算を算定している場合のみ</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/075.pdf" target="_blank" rel="noopener">ピアサポート研修実施記録・感想文.pdf</a><div class="url">https://example.com/templates/075.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/075.pdf" target="_blank" rel="noopener">ピアサポート研修実施記録・感想文_マニュアル.pdf</a><div class="url">https://example.com/manuals/075.pdf</div></td>
+</tr>
+<tr id="row-annual-14">
+  <td class="no">74</td>
+  <td class="name"><div class="title">社会生活支援特別加算に伴う研修実施記録・感想文</div><div class="row-note">社会生活支援特別加算を算定している場合のみ</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/076.pdf" target="_blank" rel="noopener">社会生活支援特別加算に伴う研修実施記録・感想文.pdf</a><div class="url">https://example.com/templates/076.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/076.pdf" target="_blank" rel="noopener">社会生活支援特別加算に伴う研修実施記録・感想文_マニュアル.pdf</a><div class="url">https://example.com/manuals/076.pdf</div></td>
+</tr>
+<tr id="row-annual-15">
+  <td class="no">追加</td>
+  <td class="name"><div class="title">決算書</div><div class="row-note">決算月は法人により異なる。WAMネット公表（69）の元データ</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/077.pdf" target="_blank" rel="noopener">決算書.pdf</a><div class="url">https://example.com/templates/077.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/077.pdf" target="_blank" rel="noopener">決算書_マニュアル.pdf</a><div class="url">https://example.com/manuals/077.pdf</div></td>
+</tr>
+<tr id="row-annual-16">
+  <td class="no">追加</td>
+  <td class="name"><div class="title">工賃向上計画シート</div><div class="row-note">※3年に1度作成・市町村へ提出（目標工賃達成加算／目標工賃達成指導員配置加算）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/j2wxgddfy6nb49i0lz4ai/_20260326.xlsx?rlkey=0wi00kcok13mrlhldvd8sj4bh&amp;st=133pk0p0&amp;dl=0" target="_blank" rel="noopener">事業所工賃向上計画シート_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/j2wxgddfy6nb49i0lz4ai/_20260326.xlsx?rlkey=0wi00kcok13mrlhldvd8sj4bh&amp;st=133pk0p0&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/078.pdf" target="_blank" rel="noopener">工賃向上計画シート_マニュアル.pdf</a><div class="url">https://example.com/manuals/078.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+<section class="category" id="review">
+<h2 class="cat-title" style="background:#4A4A52">● 見直し</h2>
+<p class="desc">運営規程・就業規則・給与規程・人員基準等、運営上の変更があったタイミングで都度見直すもの。</p>
+<table class="doc-table"><thead><tr>
+  <th class="no">No.</th>
+  <th class="name">作成資料・書類名</th>
+  <th class="progress">進捗</th>
+  <th class="linkcell">作成資料 / テンプレート</th>
+  <th class="linkcell">手順書 / マニュアル</th>
+</tr></thead><tbody>
+<tr class="group-row"><td colspan="5">■ 事業の土台・基本ルール</td></tr>
+<tr id="row-review-g0r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">運営規程</div><div class="row-note">事業内容・サービス内容を必ず位置付ける（在宅支援等を含む）。掲示又は自由に閲覧できるようにする</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/079.pdf" target="_blank" rel="noopener">運営規程.pdf</a><div class="url">https://example.com/templates/079.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/079.pdf" target="_blank" rel="noopener">運営規程_マニュアル.pdf</a><div class="url">https://example.com/manuals/079.pdf</div></td>
+</tr>
+<tr id="row-review-g0r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">年間事業・研修計画</div><div class="row-note">年度開始前に作成。各種研修・訓練の実施計画の土台</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/0yeu2eh3rjpl3tpylu03p/_20260326.xlsx?rlkey=wejqcytf41he9r5xuycbaytjf&amp;st=spfez5w6&amp;dl=0" target="_blank" rel="noopener">年間計画.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/0yeu2eh3rjpl3tpylu03p/_20260326.xlsx?rlkey=wejqcytf41he9r5xuycbaytjf&amp;st=spfez5w6&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/8td86sjelznnqexfo8b5t/.xlsx?rlkey=rxmbeisgqlczperjox3opjykp&amp;st=6y5cvbbz&amp;dl=0" target="_blank" rel="noopener">職員研修実施報告書例.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/8td86sjelznnqexfo8b5t/.xlsx?rlkey=rxmbeisgqlczperjox3opjykp&amp;st=6y5cvbbz&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g0r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">就業規則</div><div class="row-note">労務管理の基本ルール</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/081.pdf" target="_blank" rel="noopener">就業規則.pdf</a><div class="url">https://example.com/templates/081.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/081.pdf" target="_blank" rel="noopener">就業規則_マニュアル.pdf</a><div class="url">https://example.com/manuals/081.pdf</div></td>
+</tr>
+<tr id="row-review-g0r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">給与規程</div><div class="row-note">処遇改善加算関連の見直し時にも確認</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/082.pdf" target="_blank" rel="noopener">給与規程.pdf</a><div class="url">https://example.com/templates/082.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/082.pdf" target="_blank" rel="noopener">給与規程_マニュアル.pdf</a><div class="url">https://example.com/manuals/082.pdf</div></td>
+</tr>
+<tr id="row-review-g0r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">労働保険料納付書</div><div class="row-note">処遇改善加算区分の確認資料</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/083.pdf" target="_blank" rel="noopener">労働保険料納付書.pdf</a><div class="url">https://example.com/templates/083.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/083.pdf" target="_blank" rel="noopener">労働保険料納付書_マニュアル.pdf</a><div class="url">https://example.com/manuals/083.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 職員の資格証・雇用関係</td></tr>
+<tr id="row-review-g1r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">資格証・修了証一式</div><div class="row-note">サービス管理責任者、福祉専門職員配置加算、医療連携体制加算、食事提供体制加算、ピアサポート加算、高次脳機能障害者支援体制加算、視覚・聴覚言語障害者支援体制加算、社会生活支援特別加算、集中的支援加算 等に関する資格証・修了証</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/084.pdf" target="_blank" rel="noopener">資格証・修了証一式.pdf</a><div class="url">https://example.com/templates/084.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/084.pdf" target="_blank" rel="noopener">資格証・修了証一式_マニュアル.pdf</a><div class="url">https://example.com/manuals/084.pdf</div></td>
+</tr>
+<tr id="row-review-g1r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">雇用契約書／労働条件通知書</div><div class="row-note">新規採用時に作成・締結</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/085.pdf" target="_blank" rel="noopener">雇用契約書／労働条件通知書.pdf</a><div class="url">https://example.com/templates/085.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/085.pdf" target="_blank" rel="noopener">雇用契約書／労働条件通知書_マニュアル.pdf</a><div class="url">https://example.com/manuals/085.pdf</div></td>
+</tr>
+<tr id="row-review-g1r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">秘密情報の保持に関する誓約書</div><div class="row-note">新規採用時に取得</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/086.pdf" target="_blank" rel="noopener">秘密情報の保持に関する誓約書.pdf</a><div class="url">https://example.com/templates/086.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/086.pdf" target="_blank" rel="noopener">秘密情報の保持に関する誓約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/086.pdf</div></td>
+</tr>
+<tr id="row-review-g1r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">損害保険関係契約書</div><div class="row-note">契約内容の見直し時に確認</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/087.pdf" target="_blank" rel="noopener">損害保険関係契約書.pdf</a><div class="url">https://example.com/templates/087.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/087.pdf" target="_blank" rel="noopener">損害保険関係契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/087.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 医療連携体制加算（委託契約関係）</td></tr>
+<tr id="row-review-g2r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">自社で雇用した看護師等の資格証</div><div class="row-note">見直し対象（17）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/088.pdf" target="_blank" rel="noopener">自社で雇用した看護師等の資格証.pdf</a><div class="url">https://example.com/templates/088.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/088.pdf" target="_blank" rel="noopener">自社で雇用した看護師等の資格証_マニュアル.pdf</a><div class="url">https://example.com/manuals/088.pdf</div></td>
+</tr>
+<tr id="row-review-g2r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">看護記録を送った記録（雛形）</div><div class="row-note">20・21の根拠資料の雛形</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/089.pdf" target="_blank" rel="noopener">看護記録を送った記録（雛形）.pdf</a><div class="url">https://example.com/templates/089.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/089.pdf" target="_blank" rel="noopener">看護記録を送った記録（雛形）_マニュアル.pdf</a><div class="url">https://example.com/manuals/089.pdf</div></td>
+</tr>
+<tr id="row-review-g2r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">医療機関との業務委託契約書</div><div class="row-note">医師が所属する医療機関と委託契約を締結する場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/090.pdf" target="_blank" rel="noopener">医療機関との業務委託契約書.pdf</a><div class="url">https://example.com/templates/090.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/090.pdf" target="_blank" rel="noopener">医療機関との業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/090.pdf</div></td>
+</tr>
+<tr id="row-review-g2r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">訪問看護業務委託契約書</div><div class="row-note">訪問看護ステーション等と委託契約を締結する場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/091.pdf" target="_blank" rel="noopener">訪問看護業務委託契約書.pdf</a><div class="url">https://example.com/templates/091.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/091.pdf" target="_blank" rel="noopener">訪問看護業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/091.pdf</div></td>
+</tr>
+<tr id="row-review-g2r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">個人（看護師・准看護師・保健師）業務委託契約書</div><div class="row-note">個人と委託契約を締結する場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/092.pdf" target="_blank" rel="noopener">個人（看護師・准看護師・保健師）業務委託契約書.pdf</a><div class="url">https://example.com/templates/092.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/092.pdf" target="_blank" rel="noopener">個人（看護師・准看護師・保健師）業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/092.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 食事提供体制加算（委託契約関係）</td></tr>
+<tr id="row-review-g3r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">自社で雇用した管理栄養士又は栄養士の資格証</div><div class="row-note">見直し対象（22）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/093.pdf" target="_blank" rel="noopener">自社で雇用した管理栄養士又は栄養士の資格証.pdf</a><div class="url">https://example.com/templates/093.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/093.pdf" target="_blank" rel="noopener">自社で雇用した管理栄養士又は栄養士の資格証_マニュアル.pdf</a><div class="url">https://example.com/manuals/093.pdf</div></td>
+</tr>
+<tr id="row-review-g3r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">管理栄養士・栄養士との業務委託契約書</div><div class="row-note">クックサーブ／クックチル／クックフリーズ共通</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/094.pdf" target="_blank" rel="noopener">管理栄養士・栄養士との業務委託契約書.pdf</a><div class="url">https://example.com/templates/094.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/094.pdf" target="_blank" rel="noopener">管理栄養士・栄養士との業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/094.pdf</div></td>
+</tr>
+<tr id="row-review-g3r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">クックサーブ方式契約書</div><div class="row-note">食材から調理・すぐ提供する方式の場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/095.pdf" target="_blank" rel="noopener">クックサーブ方式契約書.pdf</a><div class="url">https://example.com/templates/095.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/095.pdf" target="_blank" rel="noopener">クックサーブ方式契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/095.pdf</div></td>
+</tr>
+<tr id="row-review-g3r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">調理業務委託契約書</div><div class="row-note">クックチル（冷蔵）・クックフリーズ（冷凍）の場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/096.pdf" target="_blank" rel="noopener">調理業務委託契約書.pdf</a><div class="url">https://example.com/templates/096.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/096.pdf" target="_blank" rel="noopener">調理業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/096.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 送迎加算</td></tr>
+<tr id="row-review-g4r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">車検証</div><div class="row-note">見直し対象（27）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/097.pdf" target="_blank" rel="noopener">車検証.pdf</a><div class="url">https://example.com/templates/097.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/097.pdf" target="_blank" rel="noopener">車検証_マニュアル.pdf</a><div class="url">https://example.com/manuals/097.pdf</div></td>
+</tr>
+<tr id="row-review-g4r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">運転者台帳</div><div class="row-note">運転者ごとに整備・見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/098.pdf" target="_blank" rel="noopener">運転者台帳.pdf</a><div class="url">https://example.com/templates/098.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/098.pdf" target="_blank" rel="noopener">運転者台帳_マニュアル.pdf</a><div class="url">https://example.com/manuals/098.pdf</div></td>
+</tr>
+<tr id="row-review-g4r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">送迎業務委託契約書</div><div class="row-note">送迎を業務委託している場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/099.pdf" target="_blank" rel="noopener">送迎業務委託契約書.pdf</a><div class="url">https://example.com/templates/099.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/099.pdf" target="_blank" rel="noopener">送迎業務委託契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/099.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 施設外就労</td></tr>
+<tr id="row-review-g5r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">施設外就労業務請負契約書</div><div class="row-note">施設外就労先との契約</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/100.pdf" target="_blank" rel="noopener">施設外就労業務請負契約書.pdf</a><div class="url">https://example.com/templates/100.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/100.pdf" target="_blank" rel="noopener">施設外就労業務請負契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/100.pdf</div></td>
+</tr>
+<tr id="row-review-g5r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">賃貸借契約書又は使用賃借契約書</div><div class="row-note">見直し対象（31）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/101.pdf" target="_blank" rel="noopener">賃貸借契約書又は使用賃借契約書.pdf</a><div class="url">https://example.com/templates/101.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/101.pdf" target="_blank" rel="noopener">賃貸借契約書又は使用賃借契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/101.pdf</div></td>
+</tr>
+<tr id="row-review-g5r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">機械・設備賃貸借契約書</div><div class="row-note">施設外就労先から機材・設備等を借りた場合</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/102.pdf" target="_blank" rel="noopener">機械・設備賃貸借契約書.pdf</a><div class="url">https://example.com/templates/102.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/102.pdf" target="_blank" rel="noopener">機械・設備賃貸借契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/102.pdf</div></td>
+</tr>
+<tr id="row-review-g5r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">必要経費等に関する覚書</div><div class="row-note">施設外就労に伴う必要経費の取り決め</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/103.pdf" target="_blank" rel="noopener">必要経費等に関する覚書.pdf</a><div class="url">https://example.com/templates/103.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/103.pdf" target="_blank" rel="noopener">必要経費等に関する覚書_マニュアル.pdf</a><div class="url">https://example.com/manuals/103.pdf</div></td>
+</tr>
+<tr id="row-review-g6r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急時の対応計画</div><div class="row-note">見直し対象（34）</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/104.pdf" target="_blank" rel="noopener">緊急時の対応計画.pdf</a><div class="url">https://example.com/templates/104.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/104.pdf" target="_blank" rel="noopener">緊急時の対応計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/104.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 在宅支援</td></tr>
+<tr id="row-review-g6r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急時の対応計画</div><div class="row-note">在宅支援用に整備・見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/105.pdf" target="_blank" rel="noopener">緊急時の対応計画.pdf</a><div class="url">https://example.com/templates/105.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/105.pdf" target="_blank" rel="noopener">緊急時の対応計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/105.pdf</div></td>
+</tr>
+<tr id="row-review-g6r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">在宅支援サービスに関する同意書</div><div class="row-note">対象利用者ごとに整備</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/w9uokfmazzgl8lzhmeb99/_20260216.xlsx?rlkey=uwx6t8q2r174occaproqf676s&amp;st=1herl7p1&amp;dl=0" target="_blank" rel="noopener">在宅支援サービスに関する同意書_20260216.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/w9uokfmazzgl8lzhmeb99/_20260216.xlsx?rlkey=uwx6t8q2r174occaproqf676s&amp;st=1herl7p1&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/106.pdf" target="_blank" rel="noopener">在宅支援サービスに関する同意書_マニュアル.pdf</a><div class="url">https://example.com/manuals/106.pdf</div></td>
+</tr>
+<tr id="row-review-g6r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">個人情報使用同意書</div><div class="row-note">在宅支援開始時の同意内容を含めて見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/dc8jerukb38zzbqu1teec/_20260216.docx?rlkey=2o729r2q7b23b4zyf6i4r3udq&amp;st=huqv6808&amp;dl=0" target="_blank" rel="noopener">個人情報使用同意書_20260216.docx</a><div class="url">https://www.dropbox.com/scl/fi/dc8jerukb38zzbqu1teec/_20260216.docx?rlkey=2o729r2q7b23b4zyf6i4r3udq&amp;st=huqv6808&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/107.pdf" target="_blank" rel="noopener">個人情報使用同意書_マニュアル.pdf</a><div class="url">https://example.com/manuals/107.pdf</div></td>
+</tr>
+<tr id="row-review-g6r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">職員への周知文兼同意書</div><div class="row-note">在宅支援の実施について職員へ周知</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/108.pdf" target="_blank" rel="noopener">職員への周知文兼同意書.pdf</a><div class="url">https://example.com/templates/108.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/108.pdf" target="_blank" rel="noopener">職員への周知文兼同意書_マニュアル.pdf</a><div class="url">https://example.com/manuals/108.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ サービス利用に係る契約</td></tr>
+<tr id="row-review-g7r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">契約書</div><div class="row-note">様式・条項の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/bxk1msonsg0fsk0h6wz8w/B-_20260302.doc?rlkey=ihbm8gxayr0t12wept3jo5cel&amp;st=6t8siy1a&amp;dl=0" target="_blank" rel="noopener">就B契約書_20260302.doc</a><div class="url">https://www.dropbox.com/scl/fi/bxk1msonsg0fsk0h6wz8w/B-_20260302.doc?rlkey=ihbm8gxayr0t12wept3jo5cel&amp;st=6t8siy1a&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/109.pdf" target="_blank" rel="noopener">契約書_マニュアル.pdf</a><div class="url">https://example.com/manuals/109.pdf</div></td>
+</tr>
+<tr id="row-review-g7r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">重要事項説明書</div><div class="row-note">加算・体制変更時に内容を更新</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/48at57tut5o3km2cf8j11/_20260302.doc?rlkey=zlkzdmqaalpflr0y7bh58e7y6&amp;st=00lfygbe&amp;dl=0" target="_blank" rel="noopener">重要事項説明書_20260302.doc</a><div class="url">https://www.dropbox.com/scl/fi/48at57tut5o3km2cf8j11/_20260302.doc?rlkey=zlkzdmqaalpflr0y7bh58e7y6&amp;st=00lfygbe&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/110.pdf" target="_blank" rel="noopener">重要事項説明書_マニュアル.pdf</a><div class="url">https://example.com/manuals/110.pdf</div></td>
+</tr>
+<tr id="row-review-g7r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">工賃規程</div><div class="row-note">工賃の算定方法等を見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/l8ishxzr7egcgp873ufng/_20260327.docx?rlkey=vx4mnyatzm688rwqo9t558z9v&amp;st=ekp19oub&amp;dl=0" target="_blank" rel="noopener">工賃規定_20260327.docx</a><div class="url">https://www.dropbox.com/scl/fi/l8ishxzr7egcgp873ufng/_20260327.docx?rlkey=vx4mnyatzm688rwqo9t558z9v&amp;st=ekp19oub&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/111.pdf" target="_blank" rel="noopener">工賃規程_マニュアル.pdf</a><div class="url">https://example.com/manuals/111.pdf</div></td>
+</tr>
+<tr id="row-review-g7r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急やむを得ない身体拘束に関する承諾書</div><div class="row-note">様式・内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/700shlz693tey3jwr16kc/_20260325.doc?rlkey=pazxh3kvwchfcj44rd3ncelfn&amp;st=yn5ybfq9&amp;dl=0" target="_blank" rel="noopener">緊急時やむを得ない身体拘束に関する説明書及び同意書_20260325.doc</a><div class="url">https://www.dropbox.com/scl/fi/700shlz693tey3jwr16kc/_20260325.doc?rlkey=pazxh3kvwchfcj44rd3ncelfn&amp;st=yn5ybfq9&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/11bwq2vp1rf9ylhtqaqet/.pdf?rlkey=u53uk994p52m47erzd0s93mxh&amp;st=3vhukic8&amp;dl=0" target="_blank" rel="noopener">利用者家族へ身体拘束承諾の説明について.pdf</a><div class="url">https://www.dropbox.com/scl/fi/11bwq2vp1rf9ylhtqaqet/.pdf?rlkey=u53uk994p52m47erzd0s93mxh&amp;st=3vhukic8&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g7r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">契約終了理由書</div><div class="row-note">様式の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/uye4mqu8uun0wr86xgd2n/_20260325.docx?rlkey=0u8j9a0u7m1bevz7quq5n1ddb&amp;st=w0ivrv5x&amp;dl=0" target="_blank" rel="noopener">契約終了理由書_20260325.docx</a><div class="url">https://www.dropbox.com/scl/fi/uye4mqu8uun0wr86xgd2n/_20260325.docx?rlkey=0u8j9a0u7m1bevz7quq5n1ddb&amp;st=w0ivrv5x&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/pi6dch1l5rcpgvfbwy1cn/_-_ver202504.pdf?rlkey=5prieckxkpkowoxx61zt4pg7k&amp;st=skl9j909&amp;dl=0" target="_blank" rel="noopener">契約終了理由書_補足_ver202504.pdf</a><div class="url">https://www.dropbox.com/scl/fi/pi6dch1l5rcpgvfbwy1cn/_-_ver202504.pdf?rlkey=5prieckxkpkowoxx61zt4pg7k&amp;st=skl9j909&amp;dl=0</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ マニュアル関係</td></tr>
+<tr id="row-review-g8r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">相談苦情事故マニュアル</div><div class="row-note">苦情・事故対応フローの見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/yjr3um18aiqli38zsgro6/_20260326.docx?rlkey=p9rwj8nyk1z6z9y3ms93afi3s&amp;st=42mpu5jy&amp;dl=0" target="_blank" rel="noopener">苦情相談マニュアル_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/yjr3um18aiqli38zsgro6/_20260326.docx?rlkey=p9rwj8nyk1z6z9y3ms93afi3s&amp;st=42mpu5jy&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/114.pdf" target="_blank" rel="noopener">相談苦情事故マニュアル_マニュアル.pdf</a><div class="url">https://example.com/manuals/114.pdf</div></td>
+</tr>
+<tr id="row-review-g8r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急時対応マニュアル</div><div class="row-note">緊急時の連絡体制・対応手順の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell multi" colspan="2"><ul class="multi-list"><li><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/y7mqva8zsqcpw5u3s1wkn/_20260326.docx?rlkey=kt5qi36hsckd0rwd7c2adepfp&amp;st=thlw4993&amp;dl=0" target="_blank" rel="noopener">緊急・事故対応マニュアル_20260326.docx</a></li><li><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/qfa8u5x2zi63yzxd04c7a/.pdf?rlkey=k0ie9yht3izyyhnfpysi4a2i6&amp;st=e5xe2ww8&amp;dl=0" target="_blank" rel="noopener">緊急対応マニュアル.pdf</a></li><li><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/gsx6akboi1dh5jvptgpi5/_20260326.xlsx?rlkey=acmu7noghzkkg1pmxoinpag3l&amp;st=2q0fcsi5&amp;dl=0" target="_blank" rel="noopener">救命措置の手順研修報告書_20260326.xlsx</a></li></ul></td>
+</tr>
+<tr id="row-review-g8r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">リスクマネジメント指針</div><div class="row-note">リスク管理体制全般の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/y312ohugymsvr09q9nq3a/.pdf?rlkey=clm6ix79nujq5ofcts9elyyfk&amp;st=d13qd2dd&amp;dl=0" target="_blank" rel="noopener">リスクマネジメント指針.pdf</a><div class="url">https://www.dropbox.com/scl/fi/y312ohugymsvr09q9nq3a/.pdf?rlkey=clm6ix79nujq5ofcts9elyyfk&amp;st=d13qd2dd&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/flwhf72winqst1jlrlah3/_20260326.pdf?rlkey=jv3elhtmppqinajfuwrvmwhp4&amp;st=fe5ofv68&amp;dl=0" target="_blank" rel="noopener">福祉サービスにおける危機管理（リスクマネジメント）・指針_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/flwhf72winqst1jlrlah3/_20260326.pdf?rlkey=jv3elhtmppqinajfuwrvmwhp4&amp;st=fe5ofv68&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g8r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">障がい理解ハンドブック</div><div class="row-note">職員研修内容との整合性を確認</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/03r25p2hnocrqjx95gemq/_20260326.pdf?rlkey=70kicdgtsk17e9xrp9o8ky2mw&amp;st=2ohcn7ef&amp;dl=0" target="_blank" rel="noopener">障がい理解ハンドブック_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/03r25p2hnocrqjx95gemq/_20260326.pdf?rlkey=70kicdgtsk17e9xrp9o8ky2mw&amp;st=2ohcn7ef&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/117.pdf" target="_blank" rel="noopener">障がい理解ハンドブック_マニュアル.pdf</a><div class="url">https://example.com/manuals/117.pdf</div></td>
+</tr>
+<tr id="row-review-g8r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">個人情報保護に関するガイドライン</div><div class="row-note">個人情報の取扱いルールの見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/gv29d49c4akmtg0ltsgxe/_20260326.pdf?rlkey=gfe6tu0qk4fj7s44vqal9jbyi&amp;st=q34w85yq&amp;dl=0" target="_blank" rel="noopener">医療介護事業者における個人情報保護に関するガイドライン_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/gv29d49c4akmtg0ltsgxe/_20260326.pdf?rlkey=gfe6tu0qk4fj7s44vqal9jbyi&amp;st=q34w85yq&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/118.pdf" target="_blank" rel="noopener">個人情報保護に関するガイドライン_マニュアル.pdf</a><div class="url">https://example.com/manuals/118.pdf</div></td>
+</tr>
+<tr id="row-review-g8r5">
+  <td class="no">―</td>
+  <td class="name"><div class="title">意思決定支援ガイドライン</div><div class="row-note">意思決定支援の手順の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/kk6mmg1yxhecsi8q4xp8a/.pdf?rlkey=ntt19xciygidbt5mzsziq9hco&amp;st=aol7ss93&amp;dl=0" target="_blank" rel="noopener">意思決定支援ガイドライン.pdf</a><div class="url">https://www.dropbox.com/scl/fi/kk6mmg1yxhecsi8q4xp8a/.pdf?rlkey=ntt19xciygidbt5mzsziq9hco&amp;st=aol7ss93&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/119.pdf" target="_blank" rel="noopener">意思決定支援ガイドライン_マニュアル.pdf</a><div class="url">https://example.com/manuals/119.pdf</div></td>
+</tr>
+<tr id="row-review-g8r6">
+  <td class="no">―</td>
+  <td class="name"><div class="title">意思決定支援の基本的考え方</div><div class="row-note">理念・方針の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/hkca2132jacqlt7wtb35x/.pdf?rlkey=56zpiidi29wkr9gi1y7er5emk&amp;st=c3eczibz&amp;dl=0" target="_blank" rel="noopener">意思決定支援の基本的考え方.pdf</a><div class="url">https://www.dropbox.com/scl/fi/hkca2132jacqlt7wtb35x/.pdf?rlkey=56zpiidi29wkr9gi1y7er5emk&amp;st=c3eczibz&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/120.pdf" target="_blank" rel="noopener">意思決定支援の基本的考え方_マニュアル.pdf</a><div class="url">https://example.com/manuals/120.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 虐待防止関係</td></tr>
+<tr id="row-review-g9r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止指針</div><div class="row-note">理念・対応方針の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/krnhze1eufkpyugjv81me/_20260326.docx?rlkey=lk0wbnk98ct288ouiwzjgsvku&amp;st=uoam0jqi&amp;dl=0" target="_blank" rel="noopener">虐待防止指針_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/krnhze1eufkpyugjv81me/_20260326.docx?rlkey=lk0wbnk98ct288ouiwzjgsvku&amp;st=uoam0jqi&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/121.pdf" target="_blank" rel="noopener">虐待防止指針_マニュアル.pdf</a><div class="url">https://example.com/manuals/121.pdf</div></td>
+</tr>
+<tr id="row-review-g9r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止の手引き</div><div class="row-note">対応手順の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/4vsbvj2eg7ijz6yk79348/_20260326.pdf?rlkey=xenlnvwtk8qycgj09bhiquzsc&amp;st=tjzurq1z&amp;dl=0" target="_blank" rel="noopener">障害者福祉施設等における障害者虐待の防止と対応の手引き_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/4vsbvj2eg7ijz6yk79348/_20260326.pdf?rlkey=xenlnvwtk8qycgj09bhiquzsc&amp;st=tjzurq1z&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/kzpt6ees4ra21iurgg4je/.pdf?rlkey=f2v28raar0xp79wrs2b92ljzg&amp;st=aekjv1qv&amp;dl=0" target="_blank" rel="noopener">虐待への対応マニュアル.pdf</a><div class="url">https://www.dropbox.com/scl/fi/kzpt6ees4ra21iurgg4je/.pdf?rlkey=f2v28raar0xp79wrs2b92ljzg&amp;st=aekjv1qv&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g9r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止検討委員会設置規定</div><div class="row-note">委員会の構成・運営方法の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/7ey1svr99bvu7x3t5x6ic/_20260326.docx?rlkey=jxkfu2tesxhd47pr8sg5jmrcs&amp;st=dglxmt6l&amp;dl=0" target="_blank" rel="noopener">虐待防止委員会設置規定_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/7ey1svr99bvu7x3t5x6ic/_20260326.docx?rlkey=jxkfu2tesxhd47pr8sg5jmrcs&amp;st=dglxmt6l&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/dgh3jtjqzpoucz7granjl/81_20260317_.docx?rlkey=xx6m9vex63o3mvdtzsrvu6tnp&amp;st=6kzmsfxi&amp;dl=0" target="_blank" rel="noopener">81_20260317_虐待防止検討委員会議事録（雛形）.docx</a><div class="url">https://www.dropbox.com/scl/fi/dgh3jtjqzpoucz7granjl/81_20260317_.docx?rlkey=xx6m9vex63o3mvdtzsrvu6tnp&amp;st=6kzmsfxi&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g9r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止責任者（担当者）</div><div class="row-note">担当者の選任・掲示内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/jzwqqxzsn7wbcv3zymwcj/_20260326.docx?rlkey=e97sjx4ig9ggh6qexewyk209y&amp;st=6lrmiggj&amp;dl=0" target="_blank" rel="noopener">虐待防止責任者_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/jzwqqxzsn7wbcv3zymwcj/_20260326.docx?rlkey=e97sjx4ig9ggh6qexewyk209y&amp;st=6lrmiggj&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/124.pdf" target="_blank" rel="noopener">虐待防止責任者（担当者）_マニュアル.pdf</a><div class="url">https://example.com/manuals/124.pdf</div></td>
+</tr>
+<tr id="row-review-g9r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止計画</div><div class="row-note">委員会での見直し・更新</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/9y4ius64uufmwo1xiksvt/_20260326.docx?rlkey=su71yol7beurihthtrp8ft2vk&amp;st=gn8le3vl&amp;dl=0" target="_blank" rel="noopener">虐待防止のための計画_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/9y4ius64uufmwo1xiksvt/_20260326.docx?rlkey=su71yol7beurihthtrp8ft2vk&amp;st=gn8le3vl&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/125.pdf" target="_blank" rel="noopener">虐待防止計画_マニュアル.pdf</a><div class="url">https://example.com/manuals/125.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 身体拘束適正化関係</td></tr>
+<tr id="row-review-g10r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">身体拘束適正化指針</div><div class="row-note">理念・対応方針の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/de6wumrsjjx6o6psp3oew/_20260326.docx?rlkey=ug8tilse14etz85rc0xrkihnq&amp;st=v7jfx6n5&amp;dl=0" target="_blank" rel="noopener">身体拘束適正化指針_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/de6wumrsjjx6o6psp3oew/_20260326.docx?rlkey=ug8tilse14etz85rc0xrkihnq&amp;st=v7jfx6n5&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/126.pdf" target="_blank" rel="noopener">身体拘束適正化指針_マニュアル.pdf</a><div class="url">https://example.com/manuals/126.pdf</div></td>
+</tr>
+<tr id="row-review-g10r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">身体拘束時適正化の手引き</div><div class="row-note">手順の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/19lftgigzvxxcla1iurof/.pdf?rlkey=b7iro4bzl76jnf50szue9w055&amp;st=w7obgdo6&amp;dl=0" target="_blank" rel="noopener">身体拘束時適正化の手引.pdf</a><div class="url">https://www.dropbox.com/scl/fi/19lftgigzvxxcla1iurof/.pdf?rlkey=b7iro4bzl76jnf50szue9w055&amp;st=w7obgdo6&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/127.pdf" target="_blank" rel="noopener">身体拘束時適正化の手引き_マニュアル.pdf</a><div class="url">https://example.com/manuals/127.pdf</div></td>
+</tr>
+<tr id="row-review-g10r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">身体拘束適正化検討委員会設置規定</div><div class="row-note">委員会の構成・運営方法の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/c0c3m4kjoa3ei3e6tqgeu/_20260326.docx?rlkey=t95p284gcl40mfz1hkz7k2ppp&amp;st=430h12r2&amp;dl=0" target="_blank" rel="noopener">身体的拘束等の適正化検討委員会設置規定_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/c0c3m4kjoa3ei3e6tqgeu/_20260326.docx?rlkey=t95p284gcl40mfz1hkz7k2ppp&amp;st=430h12r2&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/h60biybztod5ekoca460b/92_20260317_.docx?rlkey=td6q7sp01dl6vd6jvnfutyyha&amp;st=t01sqzgz&amp;dl=0" target="_blank" rel="noopener">92_20260317_身体的拘束適正化検討委員会議事録（雛形）.docx</a><div class="url">https://www.dropbox.com/scl/fi/h60biybztod5ekoca460b/92_20260317_.docx?rlkey=td6q7sp01dl6vd6jvnfutyyha&amp;st=t01sqzgz&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g10r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">身体拘束排除マニュアル</div><div class="row-note">排除に向けた取組内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/6t9tb17m6gm4e3h1wm2n4/.docx?rlkey=xs1x2uj850kbxynitbece9miw&amp;st=minclig5&amp;dl=0" target="_blank" rel="noopener">身体拘束排除マニュアル.docx</a><div class="url">https://www.dropbox.com/scl/fi/6t9tb17m6gm4e3h1wm2n4/.docx?rlkey=xs1x2uj850kbxynitbece9miw&amp;st=minclig5&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/129.pdf" target="_blank" rel="noopener">身体拘束排除マニュアル_マニュアル.pdf</a><div class="url">https://example.com/manuals/129.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ ハラスメント防止関係</td></tr>
+<tr id="row-review-g11r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">ハラスメント防止指針（セクハラ）</div><div class="row-note">方針・相談窓口の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/5do1tp56nb2lb3qfb7yj8/_20260326.pdf?rlkey=aaknjxxz7ovd3mwzfnctk295w&amp;st=7789b2nf&amp;dl=0" target="_blank" rel="noopener">ハラスメント防止指針（セクハラ）_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/5do1tp56nb2lb3qfb7yj8/_20260326.pdf?rlkey=aaknjxxz7ovd3mwzfnctk295w&amp;st=7789b2nf&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/130.pdf" target="_blank" rel="noopener">ハラスメント防止指針（セクハラ）_マニュアル.pdf</a><div class="url">https://example.com/manuals/130.pdf</div></td>
+</tr>
+<tr id="row-review-g11r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">ハラスメント防止指針（パワハラ）</div><div class="row-note">方針・相談窓口の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/4tykws8sivywsbxqnmrjr/_20260326.pdf?rlkey=g8gp1vy45waddl9ul4r25homx&amp;st=ioswew64&amp;dl=0" target="_blank" rel="noopener">ハラスメント防止指針（パワハラ）_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/4tykws8sivywsbxqnmrjr/_20260326.pdf?rlkey=g8gp1vy45waddl9ul4r25homx&amp;st=ioswew64&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/131.pdf" target="_blank" rel="noopener">ハラスメント防止指針（パワハラ）_マニュアル.pdf</a><div class="url">https://example.com/manuals/131.pdf</div></td>
+</tr>
+<tr id="row-review-g11r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">ハラスメント防止指針（マタハラ）</div><div class="row-note">方針・相談窓口の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/akxjrw8r9sjs8xzswv1e7/_20260326.pdf?rlkey=r0ab23kcxxmhszbz9o75yaqn7&amp;st=46kjhhlm&amp;dl=0" target="_blank" rel="noopener">ハラスメント防止指針（マタハラ）_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/akxjrw8r9sjs8xzswv1e7/_20260326.pdf?rlkey=r0ab23kcxxmhszbz9o75yaqn7&amp;st=46kjhhlm&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/132.pdf" target="_blank" rel="noopener">ハラスメント防止指針（マタハラ）_マニュアル.pdf</a><div class="url">https://example.com/manuals/132.pdf</div></td>
+</tr>
+<tr id="row-review-g11r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">ハラスメント相談担当者（掲示）</div><div class="row-note">担当者の選任・掲示内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/z16svzabccilxudhheees/_20260326.docx?rlkey=3x9ih0mt05iq3ajxvmt2pylo5&amp;st=7svz11o4&amp;dl=0" target="_blank" rel="noopener">ハラスメント相談担当者_20260326.docx</a><div class="url">https://www.dropbox.com/scl/fi/z16svzabccilxudhheees/_20260326.docx?rlkey=3x9ih0mt05iq3ajxvmt2pylo5&amp;st=7svz11o4&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/133.pdf" target="_blank" rel="noopener">ハラスメント相談担当者（掲示）_マニュアル.pdf</a><div class="url">https://example.com/manuals/133.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 感染症蔓延防止・BCP関係</td></tr>
+<tr id="row-review-g12r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">感染対策指針</div><div class="row-note">内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/zc2ay8jotqpi50j6ssih1/_20260326.doc?rlkey=dugmipi83bamrtverds09dfof&amp;st=wgvrfqmf&amp;dl=0" target="_blank" rel="noopener">感染症発生蔓延防止の指針_20260326.doc</a><div class="url">https://www.dropbox.com/scl/fi/zc2ay8jotqpi50j6ssih1/_20260326.doc?rlkey=dugmipi83bamrtverds09dfof&amp;st=wgvrfqmf&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/134.pdf" target="_blank" rel="noopener">感染対策指針_マニュアル.pdf</a><div class="url">https://example.com/manuals/134.pdf</div></td>
+</tr>
+<tr id="row-review-g12r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">感染対策指針作成の手引き</div><div class="row-note">指針作成・更新時の参照資料</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/ia5wh8n0gill5dy5x7km6/.pdf?rlkey=yd8738b3bp1c1t6tdt9a1vzwx&amp;st=1ew8nehc&amp;dl=0" target="_blank" rel="noopener">障害福祉サービス事業所等における感染対策指針作成の手引き.pdf</a><div class="url">https://www.dropbox.com/scl/fi/ia5wh8n0gill5dy5x7km6/.pdf?rlkey=yd8738b3bp1c1t6tdt9a1vzwx&amp;st=1ew8nehc&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/135.pdf" target="_blank" rel="noopener">感染対策指針作成の手引き_マニュアル.pdf</a><div class="url">https://example.com/manuals/135.pdf</div></td>
+</tr>
+<tr id="row-review-g12r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">感染対策マニュアル（厚生労働省）</div><div class="row-note">最新版への更新確認</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/kv72ut4jqt2t9u9dfqo45/_20260326.doc?rlkey=qridj7c3cfdpipcm48wy8jt2j&amp;st=agfvlz56&amp;dl=0" target="_blank" rel="noopener">感染症発生まん延防止マニュアル_20260326.doc</a><div class="url">https://www.dropbox.com/scl/fi/kv72ut4jqt2t9u9dfqo45/_20260326.doc?rlkey=qridj7c3cfdpipcm48wy8jt2j&amp;st=agfvlz56&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/ki7g4yfved5svq0q94tgg/.pdf?rlkey=4nyzr2cd89m5s6gaoadqxk62d&amp;st=vmchujj4&amp;dl=0" target="_blank" rel="noopener">障害福祉サービス施設・事業所職員のための感染対策マニュアル(通所系).pdf</a><div class="url">https://www.dropbox.com/scl/fi/ki7g4yfved5svq0q94tgg/.pdf?rlkey=4nyzr2cd89m5s6gaoadqxk62d&amp;st=vmchujj4&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g12r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">業務継続ガイドライン（感染症）</div><div class="row-note">BCP内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/wkg7mxsysdt7jg15oj9ak/.pdf?rlkey=z6o5lvorm4c12frj7qk7ix8gt&amp;st=zmeolk0g&amp;dl=0" target="_blank" rel="noopener">業務継続ガイドライン（感染症）.pdf</a><div class="url">https://www.dropbox.com/scl/fi/wkg7mxsysdt7jg15oj9ak/.pdf?rlkey=z6o5lvorm4c12frj7qk7ix8gt&amp;st=zmeolk0g&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/137.pdf" target="_blank" rel="noopener">業務継続ガイドライン（感染症）_マニュアル.pdf</a><div class="url">https://example.com/manuals/137.pdf</div></td>
+</tr>
+<tr id="row-review-g12r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">業務継続ガイドライン（自然災害）</div><div class="row-note">BCP内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-pdf" href="https://www.dropbox.com/scl/fi/ohh38zt3xvpheab4aqvtp/_20260326.pdf?rlkey=tl4rum9tf8b656v50ar7c7ft3&amp;st=zdvdb2kz&amp;dl=0" target="_blank" rel="noopener">業務継続ガイドライン（自然災害）_20260326.pdf</a><div class="url">https://www.dropbox.com/scl/fi/ohh38zt3xvpheab4aqvtp/_20260326.pdf?rlkey=tl4rum9tf8b656v50ar7c7ft3&amp;st=zdvdb2kz&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/138.pdf" target="_blank" rel="noopener">業務継続ガイドライン（自然災害）_マニュアル.pdf</a><div class="url">https://example.com/manuals/138.pdf</div></td>
+</tr>
+<tr id="row-review-g12r5">
+  <td class="no">―</td>
+  <td class="name"><div class="title">新型コロナウイルス感染症BCP</div><div class="row-note">内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/139.pdf" target="_blank" rel="noopener">新型コロナウイルス感染症BCP.pdf</a><div class="url">https://example.com/templates/139.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/139.pdf" target="_blank" rel="noopener">新型コロナウイルス感染症BCP_マニュアル.pdf</a><div class="url">https://example.com/manuals/139.pdf</div></td>
+</tr>
+<tr id="row-review-g12r6">
+  <td class="no">―</td>
+  <td class="name"><div class="title">自然災害発生時における業務継続（BCP）</div><div class="row-note">内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/e5kw7mvfai89y6zhr0v6v/_20260326.xlsx?rlkey=278lz5p3bexf35zjkr2s0ful2&amp;st=xc0pz9vf&amp;dl=0" target="_blank" rel="noopener">自然災害訓練報告書_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/e5kw7mvfai89y6zhr0v6v/_20260326.xlsx?rlkey=278lz5p3bexf35zjkr2s0ful2&amp;st=xc0pz9vf&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link link-real ft-excel" href="https://www.dropbox.com/scl/fi/a85wh6fj31nv9nn0k959j/_20260326.xlsx?rlkey=07s9r266rd9dwclijofq16ode&amp;st=jhi8ry39&amp;dl=0" target="_blank" rel="noopener">自然災害研修報告書_20260326.xlsx</a><div class="url">https://www.dropbox.com/scl/fi/a85wh6fj31nv9nn0k959j/_20260326.xlsx?rlkey=07s9r266rd9dwclijofq16ode&amp;st=jhi8ry39&amp;dl=0</div></td>
+</tr>
+<tr id="row-review-g12r7">
+  <td class="no">―</td>
+  <td class="name"><div class="title">様式ツール集</div><div class="row-note">各種様式の最新化</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/jbs1s3o5o6u81xi974e7s/87_396_20260317_.docx?rlkey=jig5e9sxfsbjdbn2prigjif98&amp;st=rw1qvz2m&amp;dl=0" target="_blank" rel="noopener">87_396_20260317_避難訓練実施結果報告書（雛形）.docx</a><div class="url">https://www.dropbox.com/scl/fi/jbs1s3o5o6u81xi974e7s/87_396_20260317_.docx?rlkey=jig5e9sxfsbjdbn2prigjif98&amp;st=rw1qvz2m&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/141.pdf" target="_blank" rel="noopener">様式ツール集_マニュアル.pdf</a><div class="url">https://example.com/manuals/141.pdf</div></td>
+</tr>
+<tr id="row-review-g12r8">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急時避難経路</div><div class="row-note">事業所内掲示・経路の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/142.pdf" target="_blank" rel="noopener">緊急時避難経路.pdf</a><div class="url">https://example.com/templates/142.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/142.pdf" target="_blank" rel="noopener">緊急時避難経路_マニュアル.pdf</a><div class="url">https://example.com/manuals/142.pdf</div></td>
+</tr>
+<tr class="group-row"><td colspan="5">■ 掲示物関係</td></tr>
+<tr id="row-review-g13r0">
+  <td class="no">―</td>
+  <td class="name"><div class="title">救急車・警察・消防への通報案内（張り紙）</div><div class="row-note">事業所内掲示の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/143.pdf" target="_blank" rel="noopener">救急車・警察・消防への通報案内（張り紙）.pdf</a><div class="url">https://example.com/templates/143.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/143.pdf" target="_blank" rel="noopener">救急車・警察・消防への通報案内（張り紙）_マニュアル.pdf</a><div class="url">https://example.com/manuals/143.pdf</div></td>
+</tr>
+<tr id="row-review-g13r1">
+  <td class="no">―</td>
+  <td class="name"><div class="title">協力医療機関の連絡先</div><div class="row-note">運営規程・重要事項説明書に記載済みの場合は掲示不要</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/144.pdf" target="_blank" rel="noopener">協力医療機関の連絡先.pdf</a><div class="url">https://example.com/templates/144.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/144.pdf" target="_blank" rel="noopener">協力医療機関の連絡先_マニュアル.pdf</a><div class="url">https://example.com/manuals/144.pdf</div></td>
+</tr>
+<tr id="row-review-g13r2">
+  <td class="no">―</td>
+  <td class="name"><div class="title">損害保険会社の連絡先</div><div class="row-note">運営規程・重要事項説明書に記載済みの場合は掲示不要</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/145.pdf" target="_blank" rel="noopener">損害保険会社の連絡先.pdf</a><div class="url">https://example.com/templates/145.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/145.pdf" target="_blank" rel="noopener">損害保険会社の連絡先_マニュアル.pdf</a><div class="url">https://example.com/manuals/145.pdf</div></td>
+</tr>
+<tr id="row-review-g13r3">
+  <td class="no">―</td>
+  <td class="name"><div class="title">苦情処理の体制（掲示）</div><div class="row-note">体制変更時に更新</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link link-real ft-word" href="https://www.dropbox.com/scl/fi/2m24v75tjpp4zx8zjk5wd/_-_20260512.docx?rlkey=pmxqxs4ub8ld73tqf578etfxz&amp;st=auheqb3o&amp;dl=0" target="_blank" rel="noopener">苦情処理の体制_掲示_20260512.docx</a><div class="url">https://www.dropbox.com/scl/fi/2m24v75tjpp4zx8zjk5wd/_-_20260512.docx?rlkey=pmxqxs4ub8ld73tqf578etfxz&amp;st=auheqb3o&amp;dl=0</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/146.pdf" target="_blank" rel="noopener">苦情処理の体制（掲示）_マニュアル.pdf</a><div class="url">https://example.com/manuals/146.pdf</div></td>
+</tr>
+<tr id="row-review-g13r4">
+  <td class="no">―</td>
+  <td class="name"><div class="title">緊急連絡先（警察・消防・救急）</div><div class="row-note">掲示内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/147.pdf" target="_blank" rel="noopener">緊急連絡先（警察・消防・救急）.pdf</a><div class="url">https://example.com/templates/147.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/147.pdf" target="_blank" rel="noopener">緊急連絡先（警察・消防・救急）_マニュアル.pdf</a><div class="url">https://example.com/manuals/147.pdf</div></td>
+</tr>
+<tr id="row-review-g13r5">
+  <td class="no">―</td>
+  <td class="name"><div class="title">管理者の連絡先</div><div class="row-note">掲示内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/148.pdf" target="_blank" rel="noopener">管理者の連絡先.pdf</a><div class="url">https://example.com/templates/148.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/148.pdf" target="_blank" rel="noopener">管理者の連絡先_マニュアル.pdf</a><div class="url">https://example.com/manuals/148.pdf</div></td>
+</tr>
+<tr id="row-review-g13r6">
+  <td class="no">―</td>
+  <td class="name"><div class="title">福祉サービス第三者評価報告書</div><div class="row-note">受審・更新時に掲示内容を見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/149.pdf" target="_blank" rel="noopener">福祉サービス第三者評価報告書.pdf</a><div class="url">https://example.com/templates/149.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/149.pdf" target="_blank" rel="noopener">福祉サービス第三者評価報告書_マニュアル.pdf</a><div class="url">https://example.com/manuals/149.pdf</div></td>
+</tr>
+<tr id="row-review-g13r7">
+  <td class="no">―</td>
+  <td class="name"><div class="title">虐待防止パンフレット</div><div class="row-note">内容の見直し</div></td>
+  <td class="progress"><input type="checkbox" aria-label="進捗チェック"></td>
+  <td class="linkcell"><a class="link" href="https://example.com/templates/150.pdf" target="_blank" rel="noopener">虐待防止パンフレット.pdf</a><div class="url">https://example.com/templates/150.pdf</div></td>
+  <td class="linkcell"><a class="link" href="https://example.com/manuals/150.pdf" target="_blank" rel="noopener">虐待防止パンフレット_マニュアル.pdf</a><div class="url">https://example.com/manuals/150.pdf</div></td>
+</tr>
+</tbody></table>
+<div class="back-to-top"><a href="#top">▲ 目次へ戻る</a></div>
+</section>
+
+</div>
+</body>
+</html>
